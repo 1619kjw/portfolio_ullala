@@ -2,7 +2,7 @@
 header {}
 header .top {
     display:flex; justify-content:flex-end;
-    padding:30px 200px;
+    padding:30px 176px;
     position:relative;
 }
 header .top #logo {
@@ -15,8 +15,10 @@ header .top .user_menu {
     border:1px solid red;
 }
 header .top .user_menu .user_top {text-align:right; margin-bottom:20px;}
-header .top .user_menu .user_top .login {margin-right:20px;}
-header .top .user_menu .user_top .join {}
+header .top .user_menu .user_top .login {
+    margin-right:20px; font-size:0.875rem; color:#444;
+}
+header .top .user_menu .user_top .join {font-size:0.875rem; color:#444;}
 header .top .user_menu .user_bottom {
     display:flex; gap:15px;
 }
@@ -25,12 +27,28 @@ header .top .user_menu .user_bottom .search_bar {
 }
 header .top .user_menu .user_bottom .search_bar #search {
     width:211px; height:26px; border-bottom:2px solid #000;
-    background-color:yellow;
 }
 header .top .user_menu .user_bottom .search_bar .searchBtn {
-    position:absolute; bottom:0; right:0;
+    position:absolute; bottom:1px; right:0;
+    line-height:0;/* 버튼태그 높이조정 */
 }
 header .top .user_menu .user_bottom .search_bar .searchBtn img {}
-header .top .user_menu .user_bottom .cartBtn {}/* 여기 크기가 3cm 더 들어갔음...? */
+header .top .user_menu .user_bottom .cartBtn {
+    line-height:0;
+}
 header .top .user_menu .user_bottom .cartBtn img {}
-header .bottom {}
+header nav {
+    display:flex; justify-content:space-between;
+    padding:18px 176px;
+}
+header nav .gnb_left {
+    display:flex; gap:36px; align-items: center;
+}
+header nav .gnb_left li {}
+header nav .gnb_left li > a {display:flex; align-items:center; gap:5px;}
+header nav .gnb_left li > a > img {}
+header nav .gnb_left li .lnb_bg {}
+header nav .gnb_left li .lnb_bg .lnb_depth1 {}
+header nav .gnb_right {
+    display:flex; gap:36px; align-items: center;
+}
