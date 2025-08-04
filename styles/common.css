@@ -1,0 +1,36 @@
+/* header, footer css */
+header {}
+header .top {
+    display:flex; justify-content:flex-end;
+    padding:30px 200px;
+    position:relative;
+}
+header .top #logo {
+    /* 화면 중앙 + 요소의절반크기만큼 이동 */
+    position:absolute; left:50%; top:30px; transform:translateX(-50%);
+}
+header .top #logo a {}
+header .top #logo a img {}
+header .top .user_menu {
+    border:1px solid red;
+}
+header .top .user_menu .user_top {text-align:right; margin-bottom:20px;}
+header .top .user_menu .user_top .login {margin-right:20px;}
+header .top .user_menu .user_top .join {}
+header .top .user_menu .user_bottom {
+    display:flex; gap:15px;
+}
+header .top .user_menu .user_bottom .search_bar {
+    position:relative;/* 검색버튼 부모위치기준 */
+}
+header .top .user_menu .user_bottom .search_bar #search {
+    width:211px; height:26px; border-bottom:2px solid #000;
+    background-color:yellow;
+}
+header .top .user_menu .user_bottom .search_bar .searchBtn {
+    position:absolute; bottom:0; right:0;
+}
+header .top .user_menu .user_bottom .search_bar .searchBtn img {}
+header .top .user_menu .user_bottom .cartBtn {}/* 여기 크기가 3cm 더 들어갔음...? */
+header .top .user_menu .user_bottom .cartBtn img {}
+header .bottom {}

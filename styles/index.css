@@ -1,1 +1,26 @@
-.line_banner {background-color:#000;}
+body {max-width:100%; min-width:320px;}
+.line_banner {
+    background-color:#000; display:flex; justify-content:flex-end;
+    position:relative; padding:9px 197px;
+}
+.line_banner .wrap {
+    display:flex; align-items:center; gap:10px;
+    /* 화면 중앙 + 요소의절반크기만큼 이동 */
+    position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
+}
+.line_banner .wrap img {}
+.line_banner .wrap span {
+    color:#fff; font-size:0.875rem; letter-spacing:-0.02em;
+}
+.line_banner .closeBtn {}
+.line_banner .closeBtn img {}
+
+
+
+/* 반응형 웹 */
+@media screen and (max-width:1199px){/* 태블릿 */
+    .line_banner {background-color:pink; padding-right:50px;}
+}/* 태블릿 반응형 끝 */
+@media screen and (max-width:759px){/* 모바일 */
+    .line_banner {background-color:green; padding-right:20px;}
+}/* 모바일 반응형 끝 */

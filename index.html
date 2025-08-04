@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ullala</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <a href="#" class="line_banner">
@@ -11,7 +15,7 @@
             <img src="./images/coupon_icon.png" alt="쿠폰아이콘">
             <span>30% COUPON FOR MEMBERSHIP ONLY</span>
         </div>
-        <a href="#"><img src="./images/close.png" alt="닫기버튼"></a>
+        <button type="button" class="closeBtn"><img src="./images/close.png" alt="닫기버튼"></button>
     </a>
     <header>
         <div class="top">
@@ -24,9 +28,9 @@
                 <div class="user_bottom">
                     <div class="search_bar">
                         <input type="search" id="search">
-                        <img src="./images/search_icon.png" alt="검색버튼">
+                        <button type="button" class="searchBtn"><img src="./images/search_icon.png" alt="검색버튼"></button>
                     </div>
-                    <a href="#"><img src="./images/cart_icon.png" alt="장바구니버튼"></a>
+                    <button type="button" class="cartBtn"><img src="./images/cart_icon.png" alt="장바구니버튼"></button>
                 </div>
             </div>
         </div>
