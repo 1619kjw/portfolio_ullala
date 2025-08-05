@@ -1,7 +1,7 @@
 body {max-width:100%; min-width:320px;}
 .line_banner {
     background-color:#000; display:flex; justify-content:flex-end;
-    position:relative; padding:9px 176px;
+    position:relative; padding:9px 120px;
 }
 .line_banner .wrap {
     display:flex; align-items:center; gap:10px;
@@ -14,20 +14,3 @@ body {max-width:100%; min-width:320px;}
 }
 .line_banner .closeBtn {}
 .line_banner .closeBtn img {}
-
-
-
-/* 반응형 웹 */
-@media screen and (max-width:1199px){/* 태블릿 */
-    .line_banner {background-color:pink; padding-right:50px;}
-    header .top #logo a img {width:136px;}
-    header .top {padding:20px 50px;}
-    header nav {padding:18px 50px;}
-    header nav .gnb_right {display:none;}
-}/* 태블릿 반응형 끝 */
-@media screen and (max-width:759px){/* 모바일 */
-    .line_banner {background-color:green; padding-right:20px;}
-    header .top #logo a img {width:90px;}
-    header .top .user_menu .user_bottom .search_bar .searchBtn img {width:23px;}
-    header .top .user_menu .user_bottom .cartBtn img {width:23px;}
-}/* 모바일 반응형 끝 */

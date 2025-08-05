@@ -1,0 +1,31 @@
+/* 반응형 웹 */
+@media screen and (max-width:1299px){/* 태블릿 */
+    .line_banner {background-color:pink; padding-right:50px;}
+    header .top #logo a img {width:136px;}
+    header .top {padding:20px 50px;}
+    header nav {padding:0 50px;}
+    header nav .gnb_right {display:none;}
+    header nav .gnb_left > li .lnb_bg {
+        padding:35px 160px;
+    }
+}/* 태블릿 반응형 끝 */
+@media screen and (max-width:799px){/* 모바일 */
+    .line_banner {background-color:green; padding-right:20px;}
+    .line_banner .wrap span {font-size:0.75rem;}
+    header {}
+    header .top { padding:15px 20px;}
+    header .top #logo {
+        position:absolute; left:50%; top:15.5px; transform:translateX(-50%);}
+    header .top #logo a img {width:90px;}
+    header .top .user_menu .user_top {display:none;}
+    header .top .user_menu .user_bottom .search_bar #search {display:none;}
+    header .top .user_menu .user_bottom .search_bar .searchBtn {position:relative; bottom:-2px;}
+    header .top .user_menu .user_bottom .search_bar .searchBtn img {width:23px;}
+    header .top .user_menu .user_bottom .cartBtn img {width:23px;}
+    header nav {padding:0px 0px; position:relative;/* 햄버거메뉴 부모위치기준 */}
+    header nav .gnb_left li {display:none;}
+    header nav .gnb_left li:first-child {/* 햄버거메뉴 */
+        display:block; position:absolute; left:20px; top:-35px;
+    }
+    header nav .gnb_left li:first-child a img {width:20px;}
+}/* 모바일 반응형 끝 */

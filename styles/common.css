@@ -1,8 +1,9 @@
 /* header, footer css */
+body * {transition:all 0.2s;}
 header {}
 header .top {
     display:flex; justify-content:flex-end;
-    padding:30px 176px;
+    padding:30px 120px;
     position:relative;
 }
 header .top #logo {
@@ -11,9 +12,7 @@ header .top #logo {
 }
 header .top #logo a {}
 header .top #logo a img {}
-header .top .user_menu {
-    border:1px solid red;
-}
+header .top .user_menu {}
 header .top .user_menu .user_top {text-align:right; margin-bottom:20px;}
 header .top .user_menu .user_top .login {
     margin-right:20px; font-size:0.875rem; color:#444;
@@ -39,16 +38,72 @@ header .top .user_menu .user_bottom .cartBtn {
 header .top .user_menu .user_bottom .cartBtn img {}
 header nav {
     display:flex; justify-content:space-between;
-    padding:18px 176px;
+    padding:0 120px; background-color: aqua;  align-items: center;
+    position:relative;/* lnb_bg부모위치기준 */
 }
 header nav .gnb_left {
     display:flex; gap:36px; align-items: center;
 }
-header nav .gnb_left li {}
-header nav .gnb_left li > a {display:flex; align-items:center; gap:5px;}
-header nav .gnb_left li > a > img {}
-header nav .gnb_left li .lnb_bg {}
-header nav .gnb_left li .lnb_bg .lnb_depth1 {}
+header nav .gnb_left > li {height:56px;}
+header nav .gnb_left > li:first-child {height:auto;}
+header nav .gnb_left > li:hover {border-bottom:3px solid #000; transition:none;}
+header nav .gnb_left > li:first-child:hover {border-bottom:none;}
+header nav .gnb_left > li > a {display:flex; align-items:center; gap:5px; line-height: 56px; }
+header nav .gnb_left > li:first-child a {}
+header nav .gnb_left > li > a > img {}
 header nav .gnb_right {
     display:flex; gap:36px; align-items: center;
 }
+header nav .gnb_right li {height:56px;}
+header nav .gnb_right li:hover {border-bottom:3px solid #000; transition:none;}
+header nav .gnb_right li > a {display:flex; align-items:center; gap:5px; line-height:56px;}
+/* lnb 디자인 */
+header nav .gnb_left > li:nth-child(4):hover .lnb_bg {display:block;}
+header nav .gnb_left > li .lnb_bg {
+    display:none;
+    position:absolute; left:0; top:56px;
+    width:100%; background-color:#fff; padding:35px 300px;
+}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 {
+    display:flex; gap:100px; align-items:center;
+}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left {
+    display:flex; gap:30px;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first {width:140px;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first li {margin-bottom:7px;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first li:last-child {margin-bottom:0;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first li a {
+    display:flex; gap:8px; align-items:center;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first li a img {}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first li a p {
+    font-size:0.875rem;
+    border-bottom:4px solid #FEEDE7;
+    line-height:0.5; padding-bottom:0;
+}
+/* header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first li a::after {
+    display:inline-block; content:'';
+    width:100%; height:4px; background-color:red;
+} */
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .first li:hover a p {
+    color:#FF5C5C; font-weight:600;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .second {}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .second li {margin-bottom:7px;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .second li:last-child {margin-bottom:0;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .second li a {
+    display:flex; gap:8px; align-items:center;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .second li a img {}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .second li a p {
+    font-size:0.875rem;
+    border-bottom:4px solid #FEEDE7;
+    line-height:0.5; padding-bottom:0;
+}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .left .second li:hover a p {
+    color:#FF5C5C; font-weight:600;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .right {
+    
+}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li {
+    margin-bottom:20px;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li:last-child {margin-bottom:0;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li a {color:#999; font-weight:500; font-size:0.875rem;}
+header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li:hover a {color:#000;}
