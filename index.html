@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ullala</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -11,85 +18,134 @@
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
-    <a href="#" class="line_banner">
-        <div class="wrap">
-            <img src="./images/coupon_icon.png" alt="쿠폰아이콘">
-            <span>30% COUPON FOR MEMBERSHIP ONLY</span>
-        </div>
-        <button type="button" class="closeBtn"><img src="./images/close.png" alt="닫기버튼"></button>
-    </a>
-    <header>
-        <div class="top">
-            <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="울랄라로고"></a></h1>
-            <div class="user_menu">
-                <div class="user_top">
-                    <a href="#" class="login">LOGIN</a>
-                    <a href="#" class="join">JOIN US</a>
-                </div>
-                <div class="user_bottom">
-                    <div class="search_bar">
-                        <input type="search" id="search">
-                        <button type="button" class="searchBtn"><img src="./images/search_icon.png" alt="검색버튼"></button>
+    <div id="allWrap">
+        <a href="#" class="line_banner">
+            <div class="wrap">
+                <img src="./images/coupon_icon.png" alt="쿠폰아이콘">
+                <span>30% COUPON FOR MEMBERSHIP ONLY</span>
+            </div>
+            <button type="button" class="closeBtn"><img src="./images/close.png" alt="닫기버튼"></button>
+        </a>
+        <header>
+            <div class="top">
+                <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="울랄라로고"></a></h1>
+                <div class="user_menu">
+                    <div class="user_top">
+                        <a href="#" class="login">LOGIN</a>
+                        <a href="#" class="join">JOIN US</a>
                     </div>
-                    <button type="button" class="cartBtn"><img src="./images/cart_icon.png" alt="장바구니버튼"></button>
+                    <div class="user_bottom">
+                        <div class="search_bar">
+                            <input type="search" id="search">
+                            <button type="button" class="searchBtn"><img src="./images/search_icon.png" alt="검색버튼"></button>
+                        </div>
+                        <button type="button" class="cartBtn"><img src="./images/cart_icon.png" alt="장바구니버튼"></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <nav>
-            <ul class="gnb_left">
-                <li><a href="#"><img src="./images/ham_menu.png" alt="전체메뉴열기"></a></li>
-                <li><a href="#">NEW</a></li>
-                <li><a href="#"><img src="./images/sale_icon.png" alt="세일아이콘">SALE!</a></li>
-                <li><a href="#">PAJAMAS</a>
-                    <div class="lnb_bg">
-                        <div class="lnb_depth1">
-                            <div class="left">
-                                <ul class="first">
-                                    <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>울랄라 파자마</p></a></li>
-                                    <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>Ullala Basic</p></a></li>
-                                    <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>Zzz by Ullala</p></a></li>
-                                    <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>커플 파자마</p></a></li>
-                                </ul>
-                                <ul class="second">
-                                    <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>빨강머리앤 파자마</p></a></li>
-                                    <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>키치 파자마</p></a></li>
-                                    <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>패드내장 파자마</p></a></li>
+            <nav>
+                <ul class="gnb_left">
+                    <li><a href="#"><img src="./images/ham_menu.png" alt="전체메뉴열기"></a></li>
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#"><img src="./images/sale_icon.png" alt="세일아이콘">SALE!</a></li>
+                    <li><a href="#">PAJAMAS</a>
+                        <div class="lnb_bg">
+                            <div class="lnb_depth1">
+                                <div class="left">
+                                    <ul class="first">
+                                        <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>울랄라 파자마</p></a></li>
+                                        <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>Ullala Basic</p></a></li>
+                                        <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>Zzz by Ullala</p></a></li>
+                                        <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>커플 파자마</p></a></li>
+                                    </ul>
+                                    <ul class="second">
+                                        <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>빨강머리앤 파자마</p></a></li>
+                                        <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>키치 파자마</p></a></li>
+                                        <li><a href="#"><img src="./images/임시_파자마사진.png" alt="파자마사진"><p>패드내장 파자마</p></a></li>
+                                    </ul>
+                                </div>
+                                <ul class="right">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">투피스</a></li>
+                                    <li><a href="#">원피스</a></li>
+                                    <li><a href="#">남/여 페어</a></li>
+                                    <li><a href="#">로브/하의</a></li>
+                                    <li><a href="#">이너</a></li>
+                                    <li><a href="#">ACC</a></li>
                                 </ul>
                             </div>
-                            <ul class="right">
-                                <li><a href="#">전체보기</a></li>
-                                <li><a href="#">투피스</a></li>
-                                <li><a href="#">원피스</a></li>
-                                <li><a href="#">남/여 페어</a></li>
-                                <li><a href="#">로브/하의</a></li>
-                                <li><a href="#">이너</a></li>
-                                <li><a href="#">ACC</a></li>
-                            </ul>
                         </div>
+                    </li>
+                    <li><a href="#">ACC</a></li>
+                    <li><a href="#">REVIEW</a></li>
+                    <li><a href="#">LOOLBOOK</a></li>
+                    <li><a href="#"><img src="./images/gift_icon.png" alt="선물아이콘">선물제안</a></li>
+                </ul>
+                <ul class="gnb_right">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">NOTICE</a></li>
+                    <li><a href="#">CS CENTER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="row1_mainBnr">
+                <div class="swiper main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">slide1</div>
+                        <div class="swiper-slide slide2">slide2</div>
+                        <div class="swiper-slide slide3">slide3</div>
                     </div>
-                </li>
-                <li><a href="#">ACC</a></li>
-                <li><a href="#">REVIEW</a></li>
-                <li><a href="#">LOOLBOOK</a></li>
-                <li><a href="#"><img src="./images/gift_icon.png" alt="선물아이콘">선물제안</a></li>
-            </ul>
-            <ul class="gnb_right">
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">NOTICE</a></li>
-                <li><a href="#">CS CENTER</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="row1_mainBnr"></section>
-        <section id="row2_new"></section>
-        <section id="row3_styles"></section>
-        <section id="row4_best"></section>
-        <section id="row5_review"></section>
-        <section id="row6_lookbook"></section>
-        <section id="row7_celeb"></section>
-        <section id="row8_insta"></section>
-    </main>
-    <footer></footer>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- 커스텀 페이지네이션은 스와이퍼 외부 작성 -->
+                <div class="custom-pagination">
+                    <span class="current">01</span>
+                    <span class="slash">/</span>
+                    <span class="total">03</span>
+                </div>
+            </section>
+            <section id="row2_new">
+                <div class="container">
+                    <h1>New Arrivals</h1>
+                    <div class="menu">
+                        <div class="tapBtn">
+                            <a href="#" class="tap active">ALL</a>
+                            <a href="#" class="tap">SALE</a>
+                            <a href="#" class="tap">쇼룸</a>
+                            <a href="#" class="tap">투피스</a>
+                            <a href="#" class="tap">원피스</a>
+                            <a href="#" class="tap">남/여 페어</a>
+                            <a href="#" class="tap">로브/하의</a>
+                            <a href="#" class="tap">이너</a>
+                            <a href="#" class="tap">ACC</a>
+                        </div>
+                        <a href="#" class="moreBtn">더보기 +</a>
+                    </div>
+                    <ul class="tapContents">
+                        <li class="tapContent active" id="new1">
+                            <div class="swiper new">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1">slide1</div>
+                                    <div class="swiper-slide slide2">slide2</div>
+                                    <div class="swiper-slide slide3">slide3</div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="row3_styles"></section>
+            <section id="row4_best"></section>
+            <section id="row5_review"></section>
+            <section id="row6_lookbook"></section>
+            <section id="row7_celeb"></section>
+            <section id="row8_insta"></section>
+        </main>
+        <footer></footer>
+    </div>
 </body>
 </html>

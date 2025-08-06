@@ -8,8 +8,19 @@
     header nav .gnb_left > li .lnb_bg {
         padding:35px 160px;
     }
+    main #row1_mainBnr .main {
+        width:100%; height:580px;
+    }
+    main #row1_mainBnr .main .swiper-wrapper * {
+        width:100%; height:580px;
+    }
+    main #row1_mainBnr .custom-pagination {bottom:25px;}
+    main #row1_mainBnr .main .swiper-button-prev,
+    main #row1_mainBnr .main .swiper-button-next {
+        width:50px; height:50px;
+    }
 }/* 태블릿 반응형 끝 */
-@media screen and (max-width:799px){/* 모바일 */
+@media screen and (max-width:820px){/* 모바일 */
     .line_banner {background-color:green; padding-right:20px;}
     .line_banner .wrap span {font-size:0.75rem;}
     header {}
@@ -28,4 +39,12 @@
         display:block; position:absolute; left:20px; top:-35px;
     }
     header nav .gnb_left li:first-child a img {width:20px;}
+
+    main #row1_mainBnr .main {
+        width:100%; height:380px;
+    }
+    main #row1_mainBnr .main .swiper-wrapper * {
+        width:100%; height:380px;
+    }
+    main #row1_mainBnr .custom-pagination {bottom:15px;}
 }/* 모바일 반응형 끝 */

@@ -38,7 +38,7 @@ header .top .user_menu .user_bottom .cartBtn {
 header .top .user_menu .user_bottom .cartBtn img {}
 header nav {
     display:flex; justify-content:space-between;
-    padding:0 120px; background-color: aqua;  align-items: center;
+    padding:0 120px; align-items: center;
     position:relative;/* lnb_bg부모위치기준 */
 }
 header nav .gnb_left {
@@ -60,7 +60,7 @@ header nav .gnb_right li > a {display:flex; align-items:center; gap:5px; line-he
 /* lnb 디자인 */
 header nav .gnb_left > li:nth-child(4):hover .lnb_bg {display:block;}
 header nav .gnb_left > li .lnb_bg {
-    display:none;
+    display:none; z-index:800;
     position:absolute; left:0; top:56px;
     width:100%; background-color:#fff; padding:35px 300px;
 }
