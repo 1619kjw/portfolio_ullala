@@ -30,8 +30,14 @@ function update(swiper){
 }
 //신제품 스와이퍼
 const newSwiper = new Swiper('.new',{
-
+    slidesPerView:4,
+    spaceBetween:16,
+    navigation:{
+        nextEl:'#new1 .swiper-button-next',
+        prevEl:'#new1 .swiper-button-prev',
+    },
 })
+
 
 //탭메뉴 공통 js
 const tapBtn = document.querySelectorAll('.tapBtn .tap');
@@ -43,3 +49,4 @@ tapBtn.forEach((obj,idx)=>{
         obj.classList.add('active');
     })
 })
+

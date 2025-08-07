@@ -95,22 +95,52 @@ main #row2_new .container .menu .moreBtn {}
 main #row2_new .container .tapContents {}
 main #row2_new .container .tapContents .tapContent {}
 main #row2_new .container .tapContents .tapContent.active {}
-main #row2_new .container .tapContents .tapContent .new {}
-main #row2_new .container .tapContents .tapContent .new .swiper-wrapper {}
-main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide {}
+main #row2_new .container .tapContents .tapContent .new {
+    width:1568px; background-color: aqua;
+}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper {width:100%;}
+/* JS에서 생성한 태그 */
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide {
+    text-align:left; border:1px solid red;
+    width:calc((100% - (16px * 3)) / 4);
+    position:relative;/* 장바구니아이콘 부모위치기준 */
+}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide.slide1 {}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide.slide2 {}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide.slide3 {}
-main #row2_new .container .tapContents .tapContent .new .swiper-button-prev {
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide.slide4 {margin-right:none;}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .product {display:block;}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags {margin-bottom:10px;}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag {
+    color:#444; font-size:0.688rem;
+    padding:3px 10px; 
+}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(1) {background-color:rgba(255, 255, 194, 0.7);}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(2) {background-color:#CAE2C6;}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(3) {background-color:#FFBCBC;}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .brand {
+    font-size:0.75rem; font-weight:500; margin-bottom:10px;
+}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .name {
+    color:#666; font-size:0.875rem; margin-bottom:15px;
+}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .price {
+    font-size:0.938rem; font-weight:500;
+}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .cart {
+    position:absolute; bottom:0; right:0; cursor:pointer;
+}
+
+main #row2_new .container .tapContents .tapContent .swiper-button-prev {
     background-image:url(../images/row2/prev.png);
-    width:50px; height:50px;
     background-size:contain;
+    width:50px; height:50px;
     left:86px;
 }
-main #row2_new .container .tapContents .tapContent .new .swiper-button-next {
+main #row2_new .container .tapContents .tapContent .swiper-button-next {
     background-image:url(../images/row2/next.png);
-    width:50px; height:50px;
     background-size:contain;
+    width:50px; height:50px;
     right:86px;
 }
 /* 3행 : 브랜드 라인 */
