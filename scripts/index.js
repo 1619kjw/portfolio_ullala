@@ -33,11 +33,27 @@ const newSwiper = new Swiper('.new',{
     slidesPerView:4,
     spaceBetween:16,
     navigation:{
-        nextEl:'#new1 .swiper-button-next',
-        prevEl:'#new1 .swiper-button-prev',
+        nextEl:'.new ~ .swiper-button-next',
+        prevEl:'.new ~ .swiper-button-prev',
     },
 })
-
+//브랜드스타일 스와이퍼
+const styleSwiper = new Swiper('.style',{
+    slidesPerView:2,
+    spaceBetween:10,
+    scrollbar:{
+        el:'.style .swiper-scrollbar',
+    },
+})
+//베스트상품 스와이퍼
+const bestSwiper = new Swiper('.best',{
+    slidesPerView:4,
+    spaceBetween:16,
+    navigation:{
+        nextEl:'.best ~ .swiper-button-next',
+        prevEl:'.best ~ .swiper-button-prev',
+    }
+})
 
 //탭메뉴 공통 js
 const tapBtn = document.querySelectorAll('.tapBtn .tap');

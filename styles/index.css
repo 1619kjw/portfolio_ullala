@@ -91,12 +91,14 @@ main #row2_new .container .menu .tapBtn .tap:last-child {margin-right:0;}
 main #row2_new .container .menu .tapBtn .tap.active {
     color:red; border-bottom:1px solid #000;
 }
-main #row2_new .container .menu .moreBtn {}
+main #row2_new .container .menu .moreBtn {font-size:0.875rem;}
 main #row2_new .container .tapContents {}
-main #row2_new .container .tapContents .tapContent {}
+main #row2_new .container .tapContents .tapContent {
+    position:relative;/* prev,next부모위치기준 */
+}
 main #row2_new .container .tapContents .tapContent.active {}
 main #row2_new .container .tapContents .tapContent .new {
-    width:1568px; background-color: aqua;
+    width:1568px;
 }
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper {width:100%;}
 /* JS에서 생성한 태그 */
@@ -144,11 +146,198 @@ main #row2_new .container .tapContents .tapContent .swiper-button-next {
     right:86px;
 }
 /* 3행 : 브랜드 라인 */
-main #row3_styles {}
+main #row3_styles {
+    padding:120px 0;
+}
+main #row3_styles .container {
+    text-align:center;
+}
+main #row3_styles .container h1 {
+    font-family:'Prata', serif; font-size:2.5rem;
+    margin-bottom:60px;
+}
+main #row3_styles .container h1 span {
+    font-family:'Prata', serif; font-size:1.25rem;
+}
+main #row3_styles .container .tapBtn {
+    margin-bottom:40px;
+}
+main #row3_styles .container .tapBtn .tap {
+    border:1px solid #777; border-radius:20px;
+    padding:10px 20px;
+    font-size:0.875rem; color:#777;
+    margin-right:28px;
+    display:inline-block;
+}
+main #row3_styles .container .tapBtn .tap:last-child {
+    margin-right:0;
+}
+main #row3_styles .container .tapBtn .tap.active {
+    color:#fff; background-color:#FF5C5C; border:none;
+}
+main #row3_styles .container .tapContents {
+    padding:0 176px;
+}
+main #row3_styles .container .tapContents .tapContent {
+    display:flex; gap:10px;
+    border:1px solid red;
+    /* margin:0 auto; */
+}
+main #row3_styles .container .tapContents .tapContent.active {}
+main #row3_styles .container .tapContents .tapContent .style {
+    width:572px; height:575px;
+    margin-right:0; margin-left:0;
+    padding-top:98px;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper {}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide {
+    text-align:left;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .listImg {}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .listImg img {display:block;}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .tags {}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .tags .tag {
+    padding:3px 10px; color:#444; font-size:0.688rem; 
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .tags .tag:nth-child(1) {
+    background-color:#FFFFC2;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .tags .tag:nth-child(2) {
+    background-color:#FFBCBC;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .tags .tag:nth-child(3) {}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .brand {
+    font-weight:500; font-size:0.75rem; margin:10px 0;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .name {
+    font-size:0.875rem; color:#666; margin-bottom:10px;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .bottom {
+    display:flex; justify-content:space-between; align-items:center;
+    padding-right:10px; padding-bottom:5px;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .bottom .price {
+    font-size:0.938rem; font-weight:500;
+}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .bottom .cart {}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .bottom .cart img {}
+main #row3_styles .container .tapContents .tapContent .style .swiper-scrollbar {}
+main #row3_styles .container .tapContents .tapContent > a {
+    /* display:block; */
+    background-image:url(../images/row3/tap1/thumb.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:986px;
+    position:relative;/* textbox부모위치기준 */
+}
+main #row3_styles .container .tapContents .tapContent > a .textbox {
+    position:absolute; bottom:29px; left:50%; transform:translateX(-50%);
+    background-color: rgba(255,255,255,0.7);
+    width:582px;
+    padding:0 80px 0 40px;
+    display:flex; align-items:center;
+}
+main #row3_styles .container .tapContents .tapContent > a .textbox img {}
+main #row3_styles .container .tapContents .tapContent > a .textbox span {
+    text-align:left;
+    font-size:0.875rem; color:#444; line-height:1.5;
+}
 /* 4행 : 베스트상품 */
-main #row4_best {}
+main #row4_best {padding:100px 0;}
+main #row4_best .container {margin:0 auto; text-align:center;}
+main #row4_best .container h1 {
+    font-family:'Prata', serif;
+    font-size:2.5rem;
+    line-height:1.5;
+}
+main #row4_best .container h1 span {
+    display:block;
+    color:#aaa; font-size:1rem;
+}
+main #row4_best .container .menu {
+    display:flex; justify-content:space-between; align-items:center;
+    margin:40px 0; padding:0 176px;
+    border-bottom:1px solid #ddd;
+}
+main #row4_best .container .menu .tapBtn {}
+main #row4_best .container .menu .tapBtn .tap {
+    margin-right:40px; font-size:0.875rem;
+    padding:15px 0; display:inline-block;
+}
+main #row4_best .container .menu .tapBtn .tap.active {
+    color:red; border-bottom:1px solid #000;
+}
+main #row4_best .container .menu .tapBtn .tap:last-child {margin-right:0;}
+main #row4_best .container .menu .moreBtn {font-size:0.875rem;}
+main #row4_best .container .tapContents {}
+main #row4_best .container .tapContents .tapContent {
+    position:relative;/* prev,next부모위치기준 */
+}
+main #row4_best .container .tapContents .tapContent.active {}
+main #row4_best .container .tapContents .tapContent .best {width:1568px;}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper {}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide {
+    text-align:left; 
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .listImg {}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .listImg img {display:block;}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags {}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag {
+    padding:3px 10px; color:#444; font-size:0.688rem; 
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag:nth-child(1) {
+    background-color:#FFFFC2;
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag:nth-child(2) {
+    background-color:#FFBCBC;
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag:nth-child(3) {}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .brand {
+    font-weight:500; font-size:0.75rem; margin:10px 0;
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .name {
+    font-size:0.875rem; color:#666; margin-bottom:10px;
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .bottom {
+    display:flex; justify-content:space-between; align-items:center;
+    padding-right:10px; padding-bottom:5px;
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .bottom .price {
+    font-size:0.938rem; font-weight:500;
+}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .bottom .cart {}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .bottom .cart img {}
+main #row4_best .container .tapContents .tapContent .swiper-button-prev {
+    background-image:url(../images/row4/prev.png);
+    background-size:contain;
+    width:50px; height:50px;
+    left:86px;
+}
+main #row4_best .container .tapContents .tapContent .swiper-button-next {
+    background-image:url(../images/row4/next.png);
+    background-size:contain;
+    width:50px; height:50px;
+    right:86px;
+}
 /* 5행 : 리뷰 */
-main #row5_review {}
+main #row5_review {
+    padding:100px 0; text-align:center;
+}
+main #row5_review .container {}
+main #row5_review .container h1 {
+    font-family:'Prata', serif;
+    font-size:2.5rem; margin-bottom:40px;
+}
+main #row5_review .container .wrap .moreBtn {
+    font-size:0.875rem; float:right; padding:0 176px;
+}
+main #row5_review .container .wrap .review {
+    width:1568px;
+}
+main #row5_review .container .wrap .review .swiper-wrapper {}
+/* db 생성태그 선택자 넣기*/
+
+
 /* 6행 : 룩북 */
 main #row6_lookbook {}
 /* 7행 : 셀럽착용제품 */
