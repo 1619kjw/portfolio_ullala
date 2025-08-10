@@ -36,6 +36,11 @@ const newSwiper = new Swiper('.new',{
         nextEl:'.new ~ .swiper-button-next',
         prevEl:'.new ~ .swiper-button-prev',
     },
+    breakpoints:{
+        1300 :{slidesPerView:4,spaceBetween:16,},
+        821 :{slidesPerView:3,spaceBetween:16,},
+        320 :{slidesPerView:2,spaceBetween:10,},
+    },
 })
 //브랜드스타일 스와이퍼
 const styleSwiper = new Swiper('.style',{

@@ -84,12 +84,12 @@ main #row2_new .container .menu {
 }
 main #row2_new .container .menu .tapBtn {}
 main #row2_new .container .menu .tapBtn .tap {
-    margin-right:40px; font-size:0.875rem;
-    padding:15px 0; display:inline-block;
+    margin-right:40px; font-size:0.875rem; color:#999;
+    display:inline-block; height:47px; line-height:47px; 
 }
 main #row2_new .container .menu .tapBtn .tap:last-child {margin-right:0;}
 main #row2_new .container .menu .tapBtn .tap.active {
-    color:red; border-bottom:1px solid #000;
+    color:#000; border-bottom:2px solid #000;
 }
 main #row2_new .container .menu .moreBtn {font-size:0.875rem;}
 main #row2_new .container .tapContents {}
@@ -111,7 +111,8 @@ main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide.slide2 {}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide.slide3 {}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide.slide4 {margin-right:none;}
-main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .product {display:block;}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .product {
+    display:block; width:100%; /* 상품이미지 */}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags {margin-bottom:10px;}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag {
     color:#444; font-size:0.688rem;
