@@ -34,6 +34,17 @@ function row2MoreContent(){
         newWrapper.appendChild(newSlide);
         
         aPrevent();
+        //장바구니 클릭 시 이미지 변경
+        const cartImg = newSlide.querySelectorAll('img[alt="장바구니담기"]');
+        cartImg.forEach(obj=>{
+            obj.addEventListener('click',()=>{
+                if(obj.src.includes('small_cart_active.png')){
+                    obj.src = './images/small_cart.png';
+                }else{
+                    obj.src = './images/small_cart_active.png';
+                }
+            });
+        });
     }
 }
 
@@ -61,6 +72,19 @@ function row3MoreContent(){
                 <a class="cart" href="#"><img src="${item.cart}" alt="장바구니담기"></a>
             </div>
         `;
+        styleWrapper.appendChild(newSlide);
+        aPrevent();
+        //장바구니 클릭 시 이미지 변경
+        const cartImg = newSlide.querySelectorAll('img[alt="장바구니담기"]');
+        cartImg.forEach(obj=>{
+            obj.addEventListener('click',()=>{
+                if(obj.src.includes('small_cart_active.png')){
+                    obj.src = './images/small_cart.png';
+                }else{
+                    obj.src = './images/small_cart_active.png';
+                }
+            });
+        });
         // <div class="swiper-slide slide1">
         //     <a class="listImg" href="#"><img src="./images/row2/tap1/01.png" alt="상품이미지"></a>
         //     <div class="tags">
@@ -75,8 +99,6 @@ function row3MoreContent(){
         //         <a href="#"><img src="./images/small_cart.png" alt="장바구니담기"></a>
         //     </div>
         // </div>
-        styleWrapper.appendChild(newSlide);
-        aPrevent();
     }
 }
 
@@ -106,6 +128,17 @@ function row4MoreContent(){
         `;
         bestWrapper.appendChild(newSlide);
         aPrevent();
+        //장바구니 클릭 시 이미지 변경
+        const cartImg = newSlide.querySelectorAll('img[alt="장바구니담기"]');
+        cartImg.forEach(obj=>{
+            obj.addEventListener('click',()=>{
+                if(obj.src.includes('small_cart_active.png')){
+                    obj.src = './images/small_cart.png';
+                }else{
+                    obj.src = './images/small_cart_active.png';
+                }
+            });
+        });
     }
 }
 

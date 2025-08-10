@@ -85,12 +85,12 @@ main #row2_new .container .menu {
 main #row2_new .container .menu .tapBtn {}
 main #row2_new .container .menu .tapBtn .tap {
     margin-right:40px; font-size:0.875rem; color:#999;
-    display:inline-block; height:47px; line-height:47px; 
+    display:inline-block; height:47px; line-height:47px;
 }
-main #row2_new .container .menu .tapBtn .tap:last-child {margin-right:0;}
 main #row2_new .container .menu .tapBtn .tap.active {
     color:#000; border-bottom:2px solid #000;
 }
+main #row2_new .container .menu .tapBtn .tap:last-child {margin-right:0;}
 main #row2_new .container .menu .moreBtn {font-size:0.875rem;}
 main #row2_new .container .tapContents {}
 main #row2_new .container .tapContents .tapContent {
@@ -99,11 +99,12 @@ main #row2_new .container .tapContents .tapContent {
 main #row2_new .container .tapContents .tapContent.active {}
 main #row2_new .container .tapContents .tapContent .new {
     width:1568px;
+    /* padding:0 176px; width:100%; */
 }
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper {width:100%;}
 /* JS에서 생성한 태그 */
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide {
-    text-align:left; border:1px solid red;
+    text-align:left;
     width:calc((100% - (16px * 3)) / 4);
     position:relative;/* 장바구니아이콘 부모위치기준 */
 }
@@ -119,8 +120,8 @@ main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-
     padding:3px 10px; 
 }
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(1) {background-color:rgba(255, 255, 194, 0.7);}
-main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(2) {background-color:#CAE2C6;}
-main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(3) {background-color:#FFBCBC;}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(2) {background-color:rgba(202, 226, 198, 0.7);}
+main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .tags .tag:nth-child(3) {background-color:rgba(255, 188, 188, 0.7);}
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .brand {
     font-size:0.75rem; font-weight:500; margin-bottom:10px;
 }
@@ -161,17 +162,18 @@ main #row3_styles .container h1 span {
     font-family:'Prata', serif; font-size:1.25rem;
 }
 main #row3_styles .container .tapBtn {
-    margin-bottom:40px;
+    margin-bottom:40px; display:flex; justify-content:center;
+    padding:0 176px; gap:38px;
 }
 main #row3_styles .container .tapBtn .tap {
     border:1px solid #777; border-radius:20px;
     padding:10px 20px;
     font-size:0.875rem; color:#777;
-    margin-right:28px;
-    display:inline-block;
+    /* margin-right:28px; */
+    /* display:inline-block; */
 }
 main #row3_styles .container .tapBtn .tap:last-child {
-    margin-right:0;
+    /* margin-right:0; */
 }
 main #row3_styles .container .tapBtn .tap.active {
     color:#fff; background-color:#FF5C5C; border:none;
@@ -181,11 +183,11 @@ main #row3_styles .container .tapContents {
 }
 main #row3_styles .container .tapContents .tapContent {
     display:flex; gap:10px;
-    border:1px solid red;
     /* margin:0 auto; */
 }
 main #row3_styles .container .tapContents .tapContent.active {}
 main #row3_styles .container .tapContents .tapContent .style {
+    order:1;
     width:572px; height:575px;
     margin-right:0; margin-left:0;
     padding-top:98px;
@@ -195,7 +197,9 @@ main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .sw
     text-align:left;
 }
 main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .listImg {}
-main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .listImg img {display:block;}
+main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .listImg img {
+    display:block; width:100%;
+}
 main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .tags {}
 main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .tags .tag {
     padding:3px 10px; color:#444; font-size:0.688rem; 
@@ -224,6 +228,7 @@ main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .sw
 main #row3_styles .container .tapContents .tapContent .style .swiper-wrapper .swiper-slide .bottom .cart img {}
 main #row3_styles .container .tapContents .tapContent .style .swiper-scrollbar {}
 main #row3_styles .container .tapContents .tapContent > a {
+    order:2;
     /* display:block; */
     background-image:url(../images/row3/tap1/thumb.png);
     background-repeat:no-repeat;
@@ -262,11 +267,11 @@ main #row4_best .container .menu {
 }
 main #row4_best .container .menu .tapBtn {}
 main #row4_best .container .menu .tapBtn .tap {
-    margin-right:40px; font-size:0.875rem;
-    padding:15px 0; display:inline-block;
+    margin-right:40px; font-size:0.875rem; color:#999;
+    display:inline-block; height:47px; line-height:47px;
 }
 main #row4_best .container .menu .tapBtn .tap.active {
-    color:red; border-bottom:1px solid #000;
+    color:#000; border-bottom:2px solid #000;
 }
 main #row4_best .container .menu .tapBtn .tap:last-child {margin-right:0;}
 main #row4_best .container .menu .moreBtn {font-size:0.875rem;}
@@ -278,19 +283,22 @@ main #row4_best .container .tapContents .tapContent.active {}
 main #row4_best .container .tapContents .tapContent .best {width:1568px;}
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper {}
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide {
-    text-align:left; 
+    text-align:left;
+    width:calc((100% - (16px * 3)) / 4);
 }
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .listImg {}
-main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .listImg img {display:block;}
+main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .listImg img {
+    display:block; width:100%; /* 상품이미지 */
+}
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags {}
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag {
     padding:3px 10px; color:#444; font-size:0.688rem; 
 }
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag:nth-child(1) {
-    background-color:#FFFFC2;
+    background-color:rgba(255, 255, 194, 0.7);
 }
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag:nth-child(2) {
-    background-color:#FFBCBC;
+    background-color:rgba(255, 188, 188, 0.7);
 }
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .tags .tag:nth-child(3) {}
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .brand {
