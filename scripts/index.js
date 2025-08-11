@@ -80,6 +80,16 @@ const bestSwiper = new Swiper('.best',{
     },
 })
 
+//리뷰 스와이퍼
+const reviewSwiper = new Swiper('.review',{
+    slidesPerView:7,
+    spaceBetween:16,
+    navigation:{
+        prevEl:'.review ~ swiper-button-prev',
+        nextEl:'.review ~ swiper-button-next'
+    },
+})
+
 
 //탭메뉴 공통 js
 const tapBtn = document.querySelectorAll('.tapBtn .tap');

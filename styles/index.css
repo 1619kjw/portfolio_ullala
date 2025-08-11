@@ -344,7 +344,30 @@ main #row5_review .container .wrap .review {
     width:1568px;
 }
 main #row5_review .container .wrap .review .swiper-wrapper {}
-/* db 생성태그 선택자 넣기*/
+/* db 생성태그 선택자 시작*/
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide {}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap {}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg {
+    display:block; margin-bottom:16px;
+}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg img {}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg {
+    display:block;
+}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg img {}
+/* db 생성태그 선택자 끝*/
+main #row5_review .container .wrap .swiper-button-prev {
+    background-image:url(../images/row5/prev.png);
+    background-size:contain;
+    width:50px; height:50px;
+    left:86px;
+}
+main #row5_review .container .wrap .swiper-button-next {
+    background-image:url(../images/row5/next.png);
+    background-size:contain;
+    width:50px; height:50px;
+    right:86px;
+}
 
 
 /* 6행 : 룩북 */

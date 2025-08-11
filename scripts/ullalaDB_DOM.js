@@ -143,3 +143,27 @@ function row4MoreContent(){
 }
 
 //5행 : 리뷰 스와이퍼 DB삽입
+const reviewWrapper = document.querySelector('.review .swiper-wrapper');
+const row5ItemShow = 10;
+const row5StartIndex = 0;
+let row5EndIndex = row5StartIndex + row5ItemShow;
+row5MoreContent();
+function row5MoreContent(){
+    for(let i = row5StartIndex; i<row5EndIndex; i++){
+        const newSlide = document.createElement('div');
+        newSlide.className=`swiper-slide slide${i+1}`;
+        const item = reviewDB[i];
+
+        newSlide.innerHTML = `
+            <div class="verticalWrap">
+                <a href="#" class="topImg">
+                    <img src="${item.src1}" alt="리뷰사진">
+                </a>
+                <a href="#" class="bottomImg">
+                    <img src="${item.src2}" alt="리뷰사진">
+                </a>
+            </div>
+        `;
+        reviewWrapper.appendChild(newSlide);
+    }
+}

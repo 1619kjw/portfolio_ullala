@@ -171,6 +171,43 @@ const bestDB = [
 
 const reviewDB = [
     {
-        src:'../images/row5/01.png',
+        src1:'../images/row5/01.png',
+        src2:'../images/row5/02.png'
+    },
+    {
+        src1:'../images/row5/03.png',
+        src2:'../images/row5/04.png'
+    },
+    {
+        src1:'../images/row5/05.png',
+        src2:'../images/row5/06.png'
+    },
+    {
+        src1:'../images/row5/07.png',
+        src2:'../images/row5/08.png'
+    },
+    {
+        src1:'../images/row5/09.png',
+        src2:'../images/row5/10.png'
+    },
+    {
+        src1:'../images/row5/11.png',
+        src2:'../images/row5/12.png'
+    },
+    {
+        src1:'../images/row5/13.png',
+        src2:'../images/row5/14.png'
+    },
+    {
+        src1:'../images/row5/09.png',
+        src2:'../images/row5/10.png'
+    },
+    {
+        src1:'../images/row5/11.png',
+        src2:'../images/row5/12.png'
+    },
+    {
+        src1:'../images/row5/13.png',
+        src2:'../images/row5/14.png'
     },
 ]
