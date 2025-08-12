@@ -337,8 +337,12 @@ main #row5_review .container h1 {
     font-family:'Prata', serif;
     font-size:2.5rem; margin-bottom:40px;
 }
+main #row5_review .container .wrap {
+    position:relative;/* prev,next부모위치기준 */
+}
 main #row5_review .container .wrap .moreBtn {
     font-size:0.875rem; float:right; padding:0 176px;
+    margin-bottom:20px;
 }
 main #row5_review .container .wrap .review {
     width:1568px;
@@ -346,15 +350,15 @@ main #row5_review .container .wrap .review {
 main #row5_review .container .wrap .review .swiper-wrapper {}
 /* db 생성태그 선택자 시작*/
 main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide {}
-main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap {}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap {
+    line-height:0; /* 자식안라인요소 때문에 생긴 라인박스를 제거하여 하단여백제거. */
+}
 main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg {
-    display:block; margin-bottom:16px;
+    display:inline-block; margin-bottom:16px;
 }
-main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg img {}
-main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg {
-    display:block;
-}
-main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg img {}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg img {display:block;}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg {display:inline-block;}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg img {display:block;}
 /* db 생성태그 선택자 끝*/
 main #row5_review .container .wrap .swiper-button-prev {
     background-image:url(../images/row5/prev.png);
@@ -367,6 +371,12 @@ main #row5_review .container .wrap .swiper-button-next {
     background-size:contain;
     width:50px; height:50px;
     right:86px;
+}
+main #row5_review .container .reviewBtn{
+    background-color:#FF5C5C;
+    color:#fff; font-size:0.875rem;
+    padding:20px; border-radius:10px;
+    display:inline-block; margin-top:36px;
 }
 
 

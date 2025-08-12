@@ -85,8 +85,8 @@ const reviewSwiper = new Swiper('.review',{
     slidesPerView:7,
     spaceBetween:16,
     navigation:{
-        prevEl:'.review ~ swiper-button-prev',
-        nextEl:'.review ~ swiper-button-next'
+        prevEl:'.review ~ .swiper-button-prev',
+        nextEl:'.review ~ .swiper-button-next',
     },
 })
 
