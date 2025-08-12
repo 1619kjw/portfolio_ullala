@@ -90,6 +90,15 @@ const reviewSwiper = new Swiper('.review',{
     },
 })
 
+//셀럽아이템 스와이퍼
+const celebSwiper = new Swiper('.celeb',{
+    slidesPerView:2,
+    navigation:{
+        prevEl:'.celeb ~ .swiper-button-prev',
+        nextEl:'.celeb ~ .swiper-button-next',
+    },
+    pagination:'.celeb ~ .swiper-pagination',
+})
 
 //탭메뉴 공통 js
 const tapBtn = document.querySelectorAll('.tapBtn .tap');

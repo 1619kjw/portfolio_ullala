@@ -167,3 +167,7 @@ function row5MoreContent(){
         reviewWrapper.appendChild(newSlide);
     }
 }
+
+
+//6행 : 룩북 DB 삽입
+// const tapContent = document.querySelector('#row6_lookbook .container .tapContents .tapContent');

@@ -384,5 +384,21 @@ main #row5_review .container .reviewBtn{
 main #row6_lookbook {}
 /* 7행 : 셀럽착용제품 */
 main #row7_celeb {}
+main #row7_celeb .container {
+    position:relative;
+}
+main #row7_celeb .container h1 {}
+main #row7_celeb .container h1 span {}
+main #row7_celeb .container .moreBtn {}
+main #row7_celeb .container .celeb {
+    width:1520px;
+}
+main #row7_celeb .container .celeb .swiper-wrapper {}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide {}
+main #row7_celeb .container .swiper-pagination {}
+main #row7_celeb .container .swiper-button-prev {
+    /* 이미지 연결하고 좌표값 입력해~! */
+}
+main #row7_celeb .container .swiper-button-next {}
 /* 8행 : 인스타그램 */
 main #row8_insta {}
