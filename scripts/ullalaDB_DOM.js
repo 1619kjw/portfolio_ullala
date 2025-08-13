@@ -171,3 +171,35 @@ function row5MoreContent(){
 
 //6행 : 룩북 DB 삽입
 // const tapContent = document.querySelector('#row6_lookbook .container .tapContents .tapContent');
+
+//7행 : 셀럽착용제품 DB
+const celebWrapper = document.querySelector('#row7_celeb .container .celeb .swiper-wrapper');
+const row7ItemShow = 4;
+const row7StartIndex = 0;
+let row7EndIndex = row7StartIndex + row7ItemShow;
+row7MoreContent();
+function row7MoreContent(){
+    for(let i = row7StartIndex; i<row7EndIndex; i++){
+        const newSlide = document.createElement('div');
+        newSlide.className=`swiper-slide slide${i+1}`;
+        const item = celebDB[i];
+
+        newSlide.innerHTML = `
+            <a href="#" class="celeb">
+                <img src="${item.src1}" alt="${item.alt1}">
+                <p>${item.source}</p>
+                <p>${item.celeb}</p>
+            </a>
+            <div class="product">
+                <a href="#"><img src="${item.src2}" alt="${item.alt2}"></a>
+                <div class="main">
+                    <p>${item.product}</p>
+                    <button type="button"><img src="${item.cart}" alt="장바구니담기"></button>
+                </div>
+                <p class="text">${item.text}</p>
+                <p class="price">${item.price}</p>
+            </div>
+        `;
+        celebWrapper.appendChild(newSlide);
+    }
+}

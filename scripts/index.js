@@ -93,6 +93,7 @@ const reviewSwiper = new Swiper('.review',{
 //셀럽아이템 스와이퍼
 const celebSwiper = new Swiper('.celeb',{
     slidesPerView:2,
+    spaceBetween:200,
     navigation:{
         prevEl:'.celeb ~ .swiper-button-prev',
         nextEl:'.celeb ~ .swiper-button-next',
