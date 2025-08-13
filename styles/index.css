@@ -383,13 +383,24 @@ main #row5_review .container .reviewBtn{
 /* 6행 : 룩북 */
 main #row6_lookbook {}
 /* 7행 : 셀럽착용제품 */
-main #row7_celeb {}
-main #row7_celeb .container {
-    position:relative;
+main #row7_celeb {
+    padding:100px 0;
 }
-main #row7_celeb .container h1 {}
-main #row7_celeb .container h1 span {}
-main #row7_celeb .container .moreBtn {}
+main #row7_celeb .container {
+    position:relative; text-align:center;
+}
+main #row7_celeb .container h1 {
+    font-family:'Prata', serif;
+    font-size:2.5rem; line-height:1.5;
+    margin-bottom:80px;
+}
+main #row7_celeb .container h1 span {
+    display:block; color:#aaa; font-size:1rem;
+}
+main #row7_celeb .container .moreBtn {
+    font-size:0.875rem; float:right; padding:0 200px;
+    margin-bottom:30px;
+}
 main #row7_celeb .container .celeb {
     width:1520px;
 }
@@ -397,8 +408,14 @@ main #row7_celeb .container .celeb .swiper-wrapper {}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide {}
 main #row7_celeb .container .swiper-pagination {}
 main #row7_celeb .container .swiper-button-prev {
-    /* 이미지 연결하고 좌표값 입력해~! */
+    background-image:url(../images/row7/prev.png);
+    background-size:cover;
+    width:70px; height:70px; left:100px;
 }
-main #row7_celeb .container .swiper-button-next {}
+main #row7_celeb .container .swiper-button-next {
+    background-image:url(../images/row7/next.png);
+    background-size:cover;
+    width:70px; height:70px; right:100px;
+}
 /* 8행 : 인스타그램 */
 main #row8_insta {}
