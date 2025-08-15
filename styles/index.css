@@ -13,7 +13,6 @@ body {max-width:100%; min-width:320px;}
     color:#fff; font-size:0.875rem; letter-spacing:-0.02em;
 }
 .line_banner .closeBtn {}
-.line_banner .closeBtn img {}
 main {}
 /* 1행 : 메인배너 */
 main #row1_mainBnr {
@@ -407,25 +406,48 @@ main #row7_celeb .container .celeb {
 main #row7_celeb .container .celeb .swiper-wrapper {}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide {
     display:flex; gap:30px;
+    width:calc((100% - 200px) / 2);
+    border:1px solid red;
 }
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb {}
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb img {}
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb p {}
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb p:first-child {}
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb p:last-child {}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb {
+    width:calc((100% - (30px * 1)) / 2);
+    border:1px solid #ddd;
+}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb img {
+    margin-bottom:30px;
+}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb p {
+    line-height:1.5;
+}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb p:first-child {
+    font-weight:500; color:#666;
+}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb p:last-child {
+    font-size:1.125rem; margin-bottom:30px;
+}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product {
-    background-color:#FFF8F3; width:315px; height:455px;
+    background-color:#FFF8F3; 
+    width:calc((100% - (30px * 1)) / 2);
 }
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product a {}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product a {
+    margin:20px 0; display:block;
+}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product a img {}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .main {
-    display:flex;
+    display:flex; justify-content:center; align-items:center;
+    padding-left:44px;
 }
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .main p {}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .main p {
+    font-size:1.125rem; font-weight:500; margin-right:20px;
+}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .main button {}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .main button img {}
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .text {}
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .price {}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .text {
+    font-size:0.875rem; line-height:1.5; margin:20px 0;
+}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .price {
+    font-weight:500; font-size:0.938rem;
+}
 main #row7_celeb .container .swiper-pagination {}
 main #row7_celeb .container .swiper-button-prev {
     background-image:url(../images/row7/prev.png);

@@ -178,6 +178,7 @@ const row7ItemShow = 4;
 const row7StartIndex = 0;
 let row7EndIndex = row7StartIndex + row7ItemShow;
 row7MoreContent();
+
 function row7MoreContent(){
     for(let i = row7StartIndex; i<row7EndIndex; i++){
         const newSlide = document.createElement('div');
@@ -197,7 +198,7 @@ function row7MoreContent(){
                     <button type="button"><img src="${item.cart}" alt="장바구니담기"></button>
                 </div>
                 <p class="text">${item.text}</p>
-                <p class="price">${item.price}</p>
+                <p class="price">${(item.price).toLocaleString('ko-kr')}원</p>
             </div>
         `;
         celebWrapper.appendChild(newSlide);

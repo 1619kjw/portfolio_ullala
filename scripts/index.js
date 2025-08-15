@@ -95,10 +95,13 @@ const celebSwiper = new Swiper('.celeb',{
     slidesPerView:2,
     spaceBetween:200,
     navigation:{
-        prevEl:'.celeb ~ .swiper-button-prev',
-        nextEl:'.celeb ~ .swiper-button-next',
+        prevEl:'#row7_celeb .swiper-button-prev',
+        nextEl:'#row7_celeb .swiper-button-next',
     },
-    pagination:'.celeb ~ .swiper-pagination',
+    pagination:{
+        el: '#row7_celeb .swiper-pagination',
+        clickable: true,
+    },
 })
 
 //탭메뉴 공통 js
