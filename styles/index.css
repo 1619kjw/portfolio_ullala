@@ -402,12 +402,19 @@ main #row7_celeb .container .moreBtn {
 }
 main #row7_celeb .container .celeb {
     width:1520px;
+    position:relative;/* 가상선택자 구분선 위치기준 */
 }
 main #row7_celeb .container .celeb .swiper-wrapper {}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide {
     display:flex; gap:30px;
     width:calc((100% - 200px) / 2);
-    border:1px solid red;
+    /* border:1px solid red; */
+}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide:nth-child(1)::after {
+    /* display:inline-block; content:'';
+    width:1px; height:217px; background-color:#000;
+    margin-left:50px;
+    position:absolute;  */
 }
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb {
     width:calc((100% - (30px * 1)) / 2);
@@ -451,12 +458,12 @@ main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .price
 main #row7_celeb .container .swiper-pagination {}
 main #row7_celeb .container .swiper-button-prev {
     background-image:url(../images/row7/prev.png);
-    background-size:cover;
+    background-size:contain;
     width:70px; height:70px; left:100px;
 }
 main #row7_celeb .container .swiper-button-next {
     background-image:url(../images/row7/next.png);
-    background-size:cover;
+    background-size:contain;
     width:70px; height:70px; right:100px;
 }
 /* 8행 : 인스타그램 */

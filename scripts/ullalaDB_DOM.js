@@ -177,8 +177,7 @@ const celebWrapper = document.querySelector('#row7_celeb .container .celeb .swip
 const row7ItemShow = 4;
 const row7StartIndex = 0;
 let row7EndIndex = row7StartIndex + row7ItemShow;
-row7MoreContent();
-
+// row7MoreContent(); 스와이퍼생성 후에 호출하기
 function row7MoreContent(){
     for(let i = row7StartIndex; i<row7EndIndex; i++){
         const newSlide = document.createElement('div');
