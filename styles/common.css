@@ -107,3 +107,49 @@ header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li {
 header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li:last-child {margin-bottom:0;}
 header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li a {color:#999; font-weight:500; font-size:0.875rem;}
 header nav .gnb_left > li .lnb_bg .lnb_depth1 .right li:hover a {color:#000;}
+
+footer {
+    background-color:#FFF8F3;
+}
+footer .top {
+    display:flex; justify-content:space-between; align-items:center;
+}
+footer .top img {}
+footer .top .sns {}
+footer .top .sns a {}
+footer .top .sns a img {}
+footer .bottom {
+    
+}
+footer .bottom .menu {
+    background-color:#FEEDE7;
+}
+footer .bottom .menu a {}
+footer .bottom .info {
+    display:flex; justify-content:space-between;
+}
+footer .bottom .info .wrap1 {}
+footer .bottom .info .wrap1 p {}
+footer .bottom .info .wrap1 p:nth-child(1) span:first-child {margin-right:20px;}
+footer .bottom .info .wrap1 p:nth-child(3) span:first-child {margin-right:20px;}
+footer .bottom .info .wrap1 p em {
+    font-weight:500;
+}
+footer .bottom .info .wrap2 {
+    display:grid;
+    grid-template-columns:auto auto;
+    justify-content:start;
+}
+footer .bottom .info .wrap2 .cs {
+
+}
+footer .bottom .info .wrap2 .cs p {}
+footer .bottom .info .wrap2 .cs p:nth-child(1) {}
+footer .bottom .info .wrap2 .cs p:nth-child(2) {}
+footer .bottom .info .wrap2 .cs p:nth-child(3) {}
+footer .bottom .info .wrap2 .delivery {
+   
+}
+footer .bottom .info .wrap2 .account {
+    
+}
