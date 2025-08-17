@@ -201,5 +201,17 @@ function row7MoreContent(){
             </div>
         `;
         celebWrapper.appendChild(newSlide);
+        aPrevent();
+        //장바구니 클릭 시 이미지 변경
+        const cartImg = newSlide.querySelectorAll('img[alt="장바구니담기"]');
+        cartImg.forEach(obj=>{
+            obj.addEventListener('click',()=>{
+                if(obj.src.includes('small_cart_active.png')){
+                    obj.src = './images/small_cart.png';
+                }else{
+                    obj.src = './images/small_cart_active.png';
+                }
+            });
+        });
     }
 }

@@ -386,7 +386,8 @@ main #row7_celeb {
     padding:100px 0;
 }
 main #row7_celeb .container {
-    position:relative; text-align:center;
+    position:relative;/* prev,next 버튼 부모위치기준 */
+    text-align:center;
 }
 main #row7_celeb .container h1 {
     font-family:'Prata', serif;
@@ -402,19 +403,20 @@ main #row7_celeb .container .moreBtn {
 }
 main #row7_celeb .container .celeb {
     width:1520px;
-    position:relative;/* 가상선택자 구분선 위치기준 */
 }
 main #row7_celeb .container .celeb .swiper-wrapper {}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide {
     display:flex; gap:30px;
     width:calc((100% - 200px) / 2);
-    /* border:1px solid red; */
+    position:relative;/* 가상선택자 구분선 위치기준 */
 }
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide:nth-child(1)::after {
-    /* display:inline-block; content:'';
-    width:1px; height:217px; background-color:#000;
-    margin-left:50px;
-    position:absolute;  */
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide::after {
+    display:block; content:'';
+    width:1px; height:217px; background-color:#ddd;
+    position:absolute; top:50%; right:-100px; transform:translateY(-50%);
+}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide:last-child::after {
+    display:none;
 }
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb {
     width:calc((100% - (30px * 1)) / 2);
@@ -460,11 +462,41 @@ main #row7_celeb .container .swiper-button-prev {
     background-image:url(../images/row7/prev.png);
     background-size:contain;
     width:70px; height:70px; left:100px;
+    transform:translateY(80%);
 }
 main #row7_celeb .container .swiper-button-next {
     background-image:url(../images/row7/next.png);
     background-size:contain;
     width:70px; height:70px; right:100px;
+    transform:translateY(80%);
 }
 /* 8행 : 인스타그램 */
-main #row8_insta {}
+main #row8_insta {
+    text-align:center; padding:100px 0;
+}
+main #row8_insta .container {}
+main #row8_insta .container h1 {
+    font-family:'Prata', serif;
+    font-size:2.5rem; line-height:1.5;
+}
+main #row8_insta .container h1 span {
+    display:block; color:#aaa; font-size:1rem;
+}
+main #row8_insta .container .photoWrap {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:16px; width:1248px; 
+    margin:0 auto; padding:40px 0; line-height:0;
+}
+main #row8_insta .container .photoWrap img {
+    width:100%; padding:10px;
+    border:1px solid #ddd;
+    display:block;
+    /* width:calc(100% - (16px * 3)); */
+}
+main #row8_insta .container .instaBtn {
+    display:inline-block;
+    background-color:#FF5C5C;
+    padding:16px 20px; border-radius:10px;
+    color:#fff; font-size:0.875rem;
+}
