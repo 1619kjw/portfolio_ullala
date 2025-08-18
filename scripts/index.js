@@ -40,7 +40,7 @@ const newSwiper = new Swiper('.new',{
         prevEl:'#row2_new .swiper-button-prev',
     },
     breakpoints:{
-        1300 :{slidesPerView:4,spaceBetween:16,},
+        1400 :{slidesPerView:4,spaceBetween:16,},
         821 :{slidesPerView:3,spaceBetween:16,},
         320 :{slidesPerView:2,spaceBetween:10,},
     },
@@ -65,7 +65,7 @@ const bestSwiper = new Swiper('.best',{
     slidesPerView:4,
     spaceBetween:16,
     breakpoints:{
-        1300 :{slidesPerView:4,spaceBetween:16,},
+        1400 :{slidesPerView:4,spaceBetween:16,},
         821 :{slidesPerView:3,spaceBetween:16,},
         320 :{slidesPerView:2,spaceBetween:10,},
     },
@@ -88,6 +88,11 @@ const reviewSwiper = new Swiper('.review',{
         prevEl:'#row5_review .swiper-button-prev',
         nextEl:'#row5_review .swiper-button-next',
     },
+    breakpoints:{
+        1400 :{slidesPerView:7,spaceBetween:16,},
+        821 :{slidesPerView:5,spaceBetween:10,},
+        320 :{slidesPerView:3,spaceBetween:8,},
+    },
 })
 
 //셀럽아이템 스와이퍼
@@ -102,6 +107,11 @@ const celebSwiper = new Swiper('#row7_celeb .celeb',{
     pagination:{
         el: '#row7_celeb .swiper-pagination',
         clickable: true,
+    },
+    breakpoints:{
+        1400 :{slidesPerView:2,spaceBetween:200,},
+        821 :{slidesPerView:1,spaceBetween:200,},
+        320 :{slidesPerView:1,spaceBetween:200,},
     },
 })
 row7MoreContent();//데이터베이스생성 함수호출

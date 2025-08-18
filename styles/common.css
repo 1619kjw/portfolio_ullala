@@ -113,23 +113,38 @@ footer {
 }
 footer .top {
     display:flex; justify-content:space-between; align-items:center;
+    padding:30px 300px; 
 }
 footer .top img {}
-footer .top .sns {}
+footer .top .sns {
+    display:flex; gap:14px;
+}
 footer .top .sns a {}
 footer .top .sns a img {}
-footer .bottom {
-    
-}
+footer .bottom {}
 footer .bottom .menu {
     background-color:#FEEDE7;
+    padding:15px 300px;
+    display:flex; gap:20px; align-items:center;
 }
-footer .bottom .menu a {}
+footer .bottom .menu a {
+    display:flex; align-items:center; gap:20px; color:#222;
+}
+footer .bottom .menu a::after {
+    display:block; content:'';
+    background-color:#222; width:1px; height:12px;
+}
+footer .bottom .menu a:last-child::after {
+    display:none;
+}
 footer .bottom .info {
     display:flex; justify-content:space-between;
+    padding:40px 300px 70px;
 }
 footer .bottom .info .wrap1 {}
-footer .bottom .info .wrap1 p {}
+footer .bottom .info .wrap1 p {
+    font-size:0.938rem; line-height:1.9;
+}
 footer .bottom .info .wrap1 p:nth-child(1) span:first-child {margin-right:20px;}
 footer .bottom .info .wrap1 p:nth-child(3) span:first-child {margin-right:20px;}
 footer .bottom .info .wrap1 p em {
@@ -138,18 +153,46 @@ footer .bottom .info .wrap1 p em {
 footer .bottom .info .wrap2 {
     display:grid;
     grid-template-columns:auto auto;
-    justify-content:start;
+    justify-content:start; gap:40px;
 }
 footer .bottom .info .wrap2 .cs {
-
+    margin-right:30px;
 }
 footer .bottom .info .wrap2 .cs p {}
-footer .bottom .info .wrap2 .cs p:nth-child(1) {}
-footer .bottom .info .wrap2 .cs p:nth-child(2) {}
-footer .bottom .info .wrap2 .cs p:nth-child(3) {}
+footer .bottom .info .wrap2 .cs p:nth-child(1) {
+    font-size:0.938rem; font-weight:500; color:#222;
+    margin-bottom:20px;
+}
+footer .bottom .info .wrap2 .cs p:nth-child(2) {
+    font-size:0.875rem; line-height:1.5; color:#222;
+}
+footer .bottom .info .wrap2 .cs p:nth-child(3) {
+    font-size:0.813rem; color:#999; margin-top:15px;
+}
 footer .bottom .info .wrap2 .delivery {
    
 }
+footer .bottom .info .wrap2 .delivery p:nth-child(1) {
+    font-size:0.938rem; font-weight:500; color:#222;
+    margin-bottom:20px;
+}
+footer .bottom .info .wrap2 .delivery p:nth-child(2) {
+    font-size:0.875rem; line-height:1.5; color:#222;
+}
+footer .bottom .info .wrap2 .delivery p:nth-child(3) {
+    font-size:0.813rem; color:#999; margin-top:15px;
+}
 footer .bottom .info .wrap2 .account {
     
+}
+footer .bottom .info .wrap2 .account p:nth-child(1) {
+    font-size:0.938rem; font-weight:500; color:#222;
+    margin-bottom:20px;
+}
+footer .bottom .info .wrap2 .account p:nth-child(2) {
+    font-size:0.875rem; font-weight:500; line-height:1.5;
+    color:#222;
+}
+footer .bottom .info .wrap2 .account p:nth-child(3) {
+    font-size:0.813rem; color:#222; line-height:1.5;
 }

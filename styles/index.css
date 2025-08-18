@@ -340,8 +340,9 @@ main #row5_review .container .wrap {
     position:relative;/* prev,next부모위치기준 */
 }
 main #row5_review .container .wrap .moreBtn {
-    font-size:0.875rem; float:right; padding:0 176px;
-    margin-bottom:20px;
+    display:block; text-align:right;
+    font-size:0.875rem; padding:0 176px;
+    margin-bottom:20px; 
 }
 main #row5_review .container .wrap .review {
     width:1568px;
@@ -355,9 +356,9 @@ main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .vertic
 main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg {
     display:inline-block; margin-bottom:16px;
 }
-main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg img {display:block;}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg img {width:100%; display:block;}
 main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg {display:inline-block;}
-main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg img {display:block;}
+main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg img {width:100%; display:block;}
 /* db 생성태그 선택자 끝*/
 main #row5_review .container .wrap .swiper-button-prev {
     background-image:url(../images/row5/prev.png);
@@ -398,7 +399,8 @@ main #row7_celeb .container h1 span {
     display:block; color:#aaa; font-size:1rem;
 }
 main #row7_celeb .container .moreBtn {
-    font-size:0.875rem; float:right; padding:0 200px;
+    display:block; text-align:right;
+    font-size:0.875rem; padding:0 200px;
     margin-bottom:30px;
 }
 main #row7_celeb .container .celeb {
@@ -457,7 +459,9 @@ main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .text 
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .price {
     font-weight:500; font-size:0.938rem;
 }
-main #row7_celeb .container .swiper-pagination {}
+main #row7_celeb .container .swiper-pagination {
+    display:none;
+}
 main #row7_celeb .container .swiper-button-prev {
     background-image:url(../images/row7/prev.png);
     background-size:contain;
