@@ -407,7 +407,7 @@ main #row7_celeb .container .celeb {
     width:1520px;
 }
 main #row7_celeb .container .celeb .swiper-wrapper {}
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide {
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide { 
     display:flex; gap:30px;
     width:calc((100% - 200px) / 2);
     position:relative;/* 가상선택자 구분선 위치기준 */
@@ -425,7 +425,7 @@ main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb {
     border:1px solid #ddd;
 }
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb img {
-    margin-bottom:30px;
+    margin-bottom:30px; width:100%;
 }
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .celeb p {
     line-height:1.5;
@@ -441,9 +441,11 @@ main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product {
     width:calc((100% - (30px * 1)) / 2);
 }
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product a {
-    margin:20px 0; display:block;
+    margin:20px 0; display:block; padding:0 30px;
 }
-main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product a img {}
+main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product a img {
+    width:100%;
+}
 main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .main {
     display:flex; justify-content:center; align-items:center;
     padding-left:44px;
@@ -495,7 +497,7 @@ main #row8_insta .container .photoWrap {
 main #row8_insta .container .photoWrap img {
     width:100%; padding:10px;
     border:1px solid #ddd;
-    display:block;
+    display:inline-block;
     /* width:calc(100% - (16px * 3)); */
 }
 main #row8_insta .container .instaBtn {
