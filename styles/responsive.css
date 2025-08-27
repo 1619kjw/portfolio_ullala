@@ -350,7 +350,7 @@
         position:relative;/* menu의 부모위치기준 */
     }
     footer .bottom .menu {
-        position:absolute; top:250px; right:0; left:0;
+        position:absolute; top:230px; right:0; left:0;
         padding:10px 0px; justify-content:center;
     }
     footer .bottom .menu a {
@@ -378,27 +378,25 @@
     }
     footer .bottom .info .wrap2 .cs p {}
     footer .bottom .info .wrap2 .cs p:nth-child(1) {
-        font-size:0.813rem; font-weight:500; color:#222;
-        margin-bottom:20px;
+        font-size:0.813rem; margin-bottom:15px;
     }
     footer .bottom .info .wrap2 .cs p:nth-child(2) {
-        font-size:0.688rem; line-height:1.5; color:#222;
+        font-size:0.688rem;
     }
     footer .bottom .info .wrap2 .cs p:nth-child(3) {
-        font-size:0.688rem; color:#999; margin-top:15px;
+        font-size:0.688rem; margin-top:10px;
     }
     footer .bottom .info .wrap2 .delivery {
         padding:20px; border-top:2px solid #FEEDE7;
     }
     footer .bottom .info .wrap2 .delivery p:nth-child(1) {
-        font-size:0.813rem; font-weight:500; color:#222;
-        margin-bottom:20px;
+        font-size:0.813rem; margin-bottom:15px;
     }
     footer .bottom .info .wrap2 .delivery p:nth-child(2) {
         font-size:0.688rem; line-height:1.5; color:#222;
     }
     footer .bottom .info .wrap2 .delivery p:nth-child(3) {
-        font-size:0.688rem; color:#999; margin-top:15px;
+        font-size:0.688rem; margin-top:10px;
     }
     footer .bottom .info .wrap2 .account {
         padding:20px;
@@ -406,14 +404,12 @@
         grid-column:1 / -1;
     }
     footer .bottom .info .wrap2 .account p:nth-child(1) {
-        font-size:0.813rem; font-weight:500; color:#222;
-        margin-bottom:20px;
+        font-size:0.813rem; margin-bottom:15px;
     }
     footer .bottom .info .wrap2 .account p:nth-child(2) {
-        font-size:0.688rem; font-weight:500; line-height:1.5;
-        color:#222;
+        font-size:0.688rem;
     }
     footer .bottom .info .wrap2 .account p:nth-child(3) {
-        font-size:0.688rem; color:#222; line-height:1.5;
+        font-size:0.688rem;
     }
 }/* 모바일 반응형 끝 */
