@@ -141,7 +141,7 @@ footer .bottom .info {
     display:flex; justify-content:space-between;
     padding:40px 300px 70px;
 }
-footer .bottom .info .wrap1 {}
+footer .bottom .info .wrap1 {order:1;}
 footer .bottom .info .wrap1 p {
     font-size:0.938rem; line-height:1.9;
 }
@@ -151,6 +151,7 @@ footer .bottom .info .wrap1 p em {
     font-weight:500;
 }
 footer .bottom .info .wrap2 {
+    order:2;
     display:grid;
     grid-template-columns:auto auto;
     justify-content:start; gap:40px;
@@ -182,9 +183,7 @@ footer .bottom .info .wrap2 .delivery p:nth-child(2) {
 footer .bottom .info .wrap2 .delivery p:nth-child(3) {
     font-size:0.813rem; color:#999; margin-top:15px;
 }
-footer .bottom .info .wrap2 .account {
-    
-}
+footer .bottom .info .wrap2 .account {}
 footer .bottom .info .wrap2 .account p:nth-child(1) {
     font-size:0.938rem; font-weight:500; color:#222;
     margin-bottom:20px;

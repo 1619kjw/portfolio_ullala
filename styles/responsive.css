@@ -116,6 +116,36 @@
     footer .bottom .info {
         padding:40px 50px 70px;
     }
+    footer .bottom .info .wrap1 p {
+        font-size:0.875rem;
+    }
+    footer .bottom .info .wrap2 .cs p:nth-child(1) {
+        font-size:0.875rem;
+    }
+    footer .bottom .info .wrap2 .cs p:nth-child(2) {
+        font-size:0.813rem;
+    }
+    footer .bottom .info .wrap2 .cs p:nth-child(3) {
+        font-size:0.75rem;
+    }
+    footer .bottom .info .wrap2 .delivery p:nth-child(1) {
+        font-size:0.875rem;
+    }
+    footer .bottom .info .wrap2 .delivery p:nth-child(2) {
+        font-size:0.813rem;
+    }
+    footer .bottom .info .wrap2 .delivery p:nth-child(3) {
+        font-size:0.75rem;
+    }
+    footer .bottom .info .wrap2 .account p:nth-child(1) {
+        font-size:0.875rem;
+    }
+    footer .bottom .info .wrap2 .account p:nth-child(2) {
+        font-size:0.813rem;
+    }
+    footer .bottom .info .wrap2 .account p:nth-child(3) {
+        font-size:0.75rem;
+    }
 }/* 태블릿 반응형 끝 */
 @media screen and (max-width:820px){/* 모바일 */
     .line_banner {background-color:green; padding-right:20px;}
@@ -307,5 +337,83 @@
     main #row8_insta .container .instaBtn {
         padding:14px 20px; border-radius:8px;
         color:#fff; font-size:0.75rem;
+    }
+    footer .top {
+        padding:40px 20px 20px;
+    }
+    footer .top > img {width:90px;}
+    footer .top .sns {
+        gap:7px;
+    }
+    footer .top .sns a img {width:25px;}
+    footer .bottom {
+        position:relative;/* menu의 부모위치기준 */
+    }
+    footer .bottom .menu {
+        position:absolute; top:250px; right:0; left:0;
+        padding:10px 0px; justify-content:center;
+    }
+    footer .bottom .menu a {
+        font-size:0.75rem;
+    }
+    footer .bottom .info {
+        flex-flow:column nowrap;
+        padding:0;
+    }
+    footer .bottom .info .wrap1 {
+        order:2;
+        padding:54px 20px 40px;
+    }
+    footer .bottom .info .wrap1 p {
+        font-size:0.75rem;
+    }
+    footer .bottom .info .wrap2 {
+        order:1; gap:0px;
+        grid-template-columns:1fr 1fr;
+    }
+    footer .bottom .info .wrap2 .cs {
+        margin-right:0px; padding:20px;
+        border-top:2px solid #FEEDE7;
+        border-right:2px solid #FEEDE7;
+    }
+    footer .bottom .info .wrap2 .cs p {}
+    footer .bottom .info .wrap2 .cs p:nth-child(1) {
+        font-size:0.813rem; font-weight:500; color:#222;
+        margin-bottom:20px;
+    }
+    footer .bottom .info .wrap2 .cs p:nth-child(2) {
+        font-size:0.688rem; line-height:1.5; color:#222;
+    }
+    footer .bottom .info .wrap2 .cs p:nth-child(3) {
+        font-size:0.688rem; color:#999; margin-top:15px;
+    }
+    footer .bottom .info .wrap2 .delivery {
+        padding:20px; border-top:2px solid #FEEDE7;
+    }
+    footer .bottom .info .wrap2 .delivery p:nth-child(1) {
+        font-size:0.813rem; font-weight:500; color:#222;
+        margin-bottom:20px;
+    }
+    footer .bottom .info .wrap2 .delivery p:nth-child(2) {
+        font-size:0.688rem; line-height:1.5; color:#222;
+    }
+    footer .bottom .info .wrap2 .delivery p:nth-child(3) {
+        font-size:0.688rem; color:#999; margin-top:15px;
+    }
+    footer .bottom .info .wrap2 .account {
+        padding:20px;
+        border-top:2px solid #FEEDE7;
+        grid-column:1 / -1;
+    }
+    footer .bottom .info .wrap2 .account p:nth-child(1) {
+        font-size:0.813rem; font-weight:500; color:#222;
+        margin-bottom:20px;
+    }
+    footer .bottom .info .wrap2 .account p:nth-child(2) {
+        font-size:0.688rem; font-weight:500; line-height:1.5;
+        color:#222;
+    }
+    footer .bottom .info .wrap2 .account p:nth-child(3) {
+        font-size:0.688rem; color:#222; line-height:1.5;
     }
 }/* 모바일 반응형 끝 */
