@@ -212,6 +212,31 @@ const reviewDB = [
     },
 ]
 
+const lookDB = [
+    {
+        position:'left',
+        type:'kitsch',
+        tags:['NEW','COUPON'],
+        brand:'ULLALA',
+        name1:'[25190WTNLN] 코렐리 나시 투피스 연베이지 (40수)',
+        price1:78000,
+        name2:'[25190WTNLN] 코렐리 나시 투피스 연베이지 (40수)',
+        price2:76000,
+        cart:'./images/small_cart.png',
+    },
+    {
+        position:'right',
+        type:'kitsch',
+        tags:['NEW','COUPON'],
+        brand:'ULLALA',
+        name1:'[25190WTNLN] 코렐리 나시 투피스 연베이지 (40수)',
+        price1:78000,
+        name2:'[25190WTNLN] 코렐리 나시 투피스 연베이지 (40수)',
+        price2:76000,
+        cart:'./images/small_cart.png',
+    },
+]
+
 const celebDB = [
     {
         src1:'./images/row7/celeb01.png',

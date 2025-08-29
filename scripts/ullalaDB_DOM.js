@@ -170,7 +170,71 @@ function row5MoreContent(){
 
 
 //6행 : 룩북 DB 삽입
-// const tapContent = document.querySelector('#row6_lookbook .container .tapContents .tapContent');
+const row6tapContent = document.querySelector('#row6_lookbook .container .tapContents .tapContent.active');
+console.log(row6tapContent);
+const row6ItemShow = 2;
+const row6StartIndex = 0;
+let row6EndIndex = row6StartIndex + row6ItemShow;
+function row6MoreContent(){
+    for(let i = row6StartIndex; i<row6ItemShow; i++){
+        const newSlide = document.createElement('div');
+        const item = lookDB[i];
+        newSlide.className = `wrap ${item.position}`;
+
+        newSlide.innerHTML = `
+            <a class="cover" href="#"><img src="./images/row6/${item.type}/cover1.png" alt="룩북표지"></a>
+            <div class="product">
+                <div class="list list1">
+                    <a class="listImg" href="#">
+                        <img src="./images/row6/${item.type}/list1.png" alt="상품이미지">
+                        <img src="./images/row6/${item.type}/detail1.png" alt="상품상세이미지">
+                    </a>
+                    <div class="info">
+                        <div class="tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <h2 class="brand">${item.brand}</h2>
+                        <a href="#"><p class="name">${item.name1}</p></a>
+                        <div class="bottom">
+                            <p class="price">${(item.price1).toLocaleString('ko-kr')}원</p>
+                            <a class="cart" href="#"><img src="${item.cart}" alt="장바구니담기"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list list2">
+                    <a class="listImg" href="#">
+                        <img src="./images/row6/${item.type}/list2.png" alt="상품이미지">
+                        <img src="./images/row6/${item.type}/detail2.png" alt="상품상세이미지">
+                    </a>
+                    <div class="info">
+                        <div class="tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <h2 class="brand">${item.brand}</h2>
+                        <a href="#"><p class="name">${item.name2}</p></a>
+                        <div class="bottom">
+                            <p class="price">${(item.price2).toLocaleString('ko-kr')}원</p>
+                            <a class="cart" href="#"><img src="${item.cart}" alt="장바구니담기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        row6tapContent.appendChild(newSlide);
+        aPrevent();
+        //장바구니 클릭 시 이미지 변경
+        const cartImg = newSlide.querySelectorAll('img[alt="장바구니담기"]');
+        cartImg.forEach(obj=>{
+            obj.addEventListener('click',()=>{
+                if(obj.src.includes('small_cart_active.png')){
+                    obj.src = './images/small_cart.png';
+                }else{
+                    obj.src = './images/small_cart_active.png';
+                }
+            });
+        });
+    }
+}
 
 //7행 : 셀럽착용제품 DB
 const celebWrapper = document.querySelector('#row7_celeb .container .celeb .swiper-wrapper');

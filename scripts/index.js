@@ -95,6 +95,14 @@ const reviewSwiper = new Swiper('.review',{
     },
 })
 
+//룩북 탭메뉴 스와이퍼
+const lbTapSwiper = new Swiper('.lookbookTap',{
+    slidesPerView:'auto',
+    spaceBetween:28,
+    freeMode:true,
+    watchOverFlow:true,//슬라이드 개수가 적으면 넘김/네비 비활성
+})
+
 //셀럽아이템 스와이퍼
 const celebSwiper = new Swiper('#row7_celeb .celeb',{
     init:false,//초기화 막기

@@ -381,7 +381,69 @@ main #row5_review .container .reviewBtn{
 
 
 /* 6행 : 룩북 */
-main #row6_lookbook {}
+main #row6_lookbook {
+    padding:100px 0; background-color:#f5f5f5; text-align:center;
+}
+main #row6_lookbook .container {width:1340px; margin:0 auto;}
+main #row6_lookbook .container h1 {
+    font-family:'Prata', serif;
+    font-size:1.875rem; margin-bottom:50px;
+}
+main #row6_lookbook .container .tapBtn {
+    width:600px; margin:0px auto 20px;
+}
+main #row6_lookbook .container .tapBtn .lookbookTap {}
+main #row6_lookbook .container .tapBtn .lookbookTap .swiper-wrapper {}
+main #row6_lookbook .container .tapBtn .lookbookTap .swiper-wrapper .swiper-slide {
+    width:auto; 
+}
+main #row6_lookbook .container .tapBtn .lookbookTap .swiper-wrapper .swiper-slide .tap {
+    display:inline-block;
+    border:1px solid #777; border-radius:20px; 
+    font-size:0.875rem; color:#777; padding:10px 20px;
+}
+main #row6_lookbook .container .tapBtn .lookbookTap .swiper-wrapper .swiper-slide .tap.active {
+    background-color:#FF5C5C; color:#fff; border:1px solid #fff;
+}
+main #row6_lookbook .container .moreBtn {
+    text-align:right; display:block; margin-bottom:12px;
+}
+main #row6_lookbook .container .tapContents {}
+main #row6_lookbook .container .tapContents .tapContent {
+    display:flex; gap:40px;
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap {
+    width:calc((100% - (40px * 1)) / 2);
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .cover {
+    display:block; line-height:0; margin-bottom:10px;
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .cover img {
+    display:block; width:100%;}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product {
+    display:flex; gap:10px;
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list {
+    width:calc((100% - (10px * 1)) / 2);
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .listImg {
+    display:flex; width:100%;
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .listImg img {
+    width:100%;
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .listImg img:first-child {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .listImg img:last-child {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags .tag {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .brand {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info > a {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info > a .name {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .price {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .cart {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .cart img {}
 /* 7행 : 셀럽착용제품 */
 main #row7_celeb {
     padding:100px 0;
