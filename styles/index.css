@@ -412,6 +412,7 @@ main #row6_lookbook .container .tapContents {}
 main #row6_lookbook .container .tapContents .tapContent {
     display:flex; gap:40px;
 }
+/* JS에서 생성한 태그 */
 main #row6_lookbook .container .tapContents .tapContent .wrap {
     width:calc((100% - (40px * 1)) / 2);
 }
@@ -434,16 +435,24 @@ main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .li
 }
 main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .listImg img:first-child {}
 main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .listImg img:last-child {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags .tag {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .brand {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info {text-align:left;}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags {margin-bottom:10px;}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags .tag {
+    color:#444; font-size:0.688rem;
+    padding:3px 10px; 
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags .tag:nth-child(1) {background-color:rgba(255, 255, 194, 0.7);}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags .tag:nth-child(2) {background-color:rgba(255, 188, 188, 0.7);}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .brand {font-size:0.75rem; font-weight:500; margin-bottom:10px;}
 main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info > a {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info > a .name {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .price {}
-main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .cart {}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info > a .name {color:#666; font-size:0.875rem; margin-bottom:15px;}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom {
+    display:flex; align-items:center; justify-content:space-between; padding-right:10px;
+}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .price {font-size:0.938rem; font-weight:500;}
+main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .cart {cursor:pointer;}
 main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .bottom .cart img {}
+
 /* 7행 : 셀럽착용제품 */
 main #row7_celeb {
     padding:100px 0;

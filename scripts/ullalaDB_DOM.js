@@ -175,19 +175,20 @@ console.log(row6tapContent);
 const row6ItemShow = 2;
 const row6StartIndex = 0;
 let row6EndIndex = row6StartIndex + row6ItemShow;
+row6MoreContent();
 function row6MoreContent(){
-    for(let i = row6StartIndex; i<row6ItemShow; i++){
+    for(let i = row6StartIndex; i<row6EndIndex; i++){
         const newSlide = document.createElement('div');
         const item = lookDB[i];
         newSlide.className = `wrap ${item.position}`;
 
         newSlide.innerHTML = `
-            <a class="cover" href="#"><img src="./images/row6/${item.type}/cover1.png" alt="룩북표지"></a>
+            <a class="cover" href="#"><img src="${item.cover}" alt="룩북표지"></a>
             <div class="product">
                 <div class="list list1">
                     <a class="listImg" href="#">
-                        <img src="./images/row6/${item.type}/list1.png" alt="상품이미지">
-                        <img src="./images/row6/${item.type}/detail1.png" alt="상품상세이미지">
+                        <img src="${item.product1}" alt="상품이미지">
+                        <img src="${item.detail1}" alt="상품상세이미지">
                     </a>
                     <div class="info">
                         <div class="tags">
@@ -203,8 +204,8 @@ function row6MoreContent(){
                 </div>
                 <div class="list list2">
                     <a class="listImg" href="#">
-                        <img src="./images/row6/${item.type}/list2.png" alt="상품이미지">
-                        <img src="./images/row6/${item.type}/detail2.png" alt="상품상세이미지">
+                        <img src="${item.product2}" alt="상품이미지">
+                        <img src="${item.detail2}" alt="상품상세이미지">
                     </a>
                     <div class="info">
                         <div class="tags">
