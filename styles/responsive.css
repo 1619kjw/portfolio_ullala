@@ -43,8 +43,7 @@
         padding:100px 0;
     }
     main #row3_styles .container .tapBtn {
-        margin-bottom:40px; display:flex; flex-flow:row wrap; justify-content:center;
-        padding:0 90px; gap:20px;
+        width:800px; margin:0 auto 40px;
     }
     main #row3_styles .container .tapContents {
         padding:0 90px; 
@@ -84,6 +83,11 @@
     main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg {margin-bottom:10px;}
     main #row5_review .container .wrap .swiper-button-prev {left:30px; transform:translateY(20%);}
     main #row5_review .container .wrap .swiper-button-next {right:30px; transform:translateY(20%);}
+    /* 6행 변경디자인 */
+    main #row6_lookbook .container .moreBtn {width:650px;}
+    main #row6_lookbook .container .tapContents {width:650px; margin:0 auto;}
+    main #row6_lookbook .container .tapContents .tapContent .wrap {width:100%;}
+    main #row6_lookbook .container .tapContents .tapContent .wrap.right {display:none;}
     /* 7행 변경디자인 */
     main #row7_celeb .container h1 {
         margin-bottom:60px;
@@ -212,10 +216,11 @@
         font-size:0.875rem;
     }
     main #row3_styles .container .tapBtn {
-        margin-bottom:20px; padding:0 20px; gap:15px;
+        margin-bottom:20px;
+        width:500px;
     }
-    main #row3_styles .container .tapBtn .tap {
-        padding:10px 15px;
+    main #row3_styles .container .tapBtn .stylesTap .swiper-wrapper .swiper-slide .tap {
+        padding:9px 14px; font-size:0.75rem; 
     }
     main #row3_styles .container .tapContents {
         padding:0 20px; 
@@ -272,6 +277,22 @@
     main #row5_review .container .wrap .swiper-button-next {
         width:30px; height:30px; right:30px;
         transform:translateY(80%);}
+    /* 6행 변경디자인 */
+    main #row6_lookbook .container h1 {
+        font-size:1.375rem; margin-bottom:40px;
+    }
+    main #row6_lookbook .container .tapBtn {
+        width:390px; margin:0px auto 20px;
+    }
+    main #row6_lookbook .container .tapBtn .lookbookTap .swiper-wrapper .swiper-slide .tap {
+        display:inline-block;
+        border:1px solid #777; border-radius:20px; 
+        font-size:0.75rem; color:#777; padding:8px 16px;
+    }
+    main #row6_lookbook .container .moreBtn {width:390px;}
+    main #row6_lookbook .container .tapContents {width:390px;}
+    main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info .tags .tag {font-size:0.625rem;}
+    main #row6_lookbook .container .tapContents .tapContent .wrap .product .list .info > a .name {font-size:0.75rem; line-height:1.3;}
     /* 7행 변경디자인 */
     main #row7_celeb .container h1 {
         font-size:1.375rem; margin-bottom:40px;
@@ -282,7 +303,6 @@
     main #row7_celeb .container .moreBtn {
         padding:0 20px;
     }
-    /* 여기부터 시작 */
     main #row7_celeb .container .celeb {width:450px;}
     main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide { 
         gap:10px; align-items:end;

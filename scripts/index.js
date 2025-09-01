@@ -51,6 +51,18 @@ const newSwiper = new Swiper('.new',{
     },
 })
 
+//브랜드스타일 탭메뉴 스와이퍼
+const stylesTapSwiper = new Swiper('.stylesTap',{
+    slidesPerView:'auto',
+    spaceBetween:28,
+    freeMode:true,
+    watchOverFlow:true,//슬라이드 개수가 적으면 넘김/네비 비활성
+    breakpoints:{
+        1400 :{slidesPerView:'auto',spaceBetween:28,},
+        821 :{slidesPerView:'auto',spaceBetween:28,},
+        320 :{slidesPerView:'auto',spaceBetween:18,},
+    },
+})
 //브랜드스타일 스와이퍼
 const styleSwiper = new Swiper('.style',{
     slidesPerView:2,
@@ -101,6 +113,11 @@ const lbTapSwiper = new Swiper('.lookbookTap',{
     spaceBetween:28,
     freeMode:true,
     watchOverFlow:true,//슬라이드 개수가 적으면 넘김/네비 비활성
+    breakpoints:{
+        1400 :{slidesPerView:'auto',spaceBetween:28,},
+        821 :{slidesPerView:'auto',spaceBetween:28,},
+        320 :{slidesPerView:'auto',spaceBetween:18,},
+    },
 })
 
 //셀럽아이템 스와이퍼
