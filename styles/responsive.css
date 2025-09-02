@@ -1,6 +1,6 @@
 /* 반응형 웹 */
 @media screen and (max-width:1399px){/* 태블릿 */
-    .line_banner {background-color:pink; padding-right:50px;}
+    .line_banner {padding-right:50px;}
     header .top #logo a img {width:136px;}
     header .top {padding:20px 50px;}
     header nav {padding:0 50px;}
@@ -152,7 +152,7 @@
     }
 }/* 태블릿 반응형 끝 */
 @media screen and (max-width:820px){/* 모바일 */
-    .line_banner {background-color:green; padding-right:20px;}
+    .line_banner {padding-right:20px;}
     .line_banner .wrap span {font-size:0.75rem;}
     header {}
     header .top { padding:15px 20px;}
