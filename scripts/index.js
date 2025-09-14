@@ -22,8 +22,8 @@ const mainSwiper = new Swiper('.main',{
         slideChange:function(){update(this);},
     },
     navigation:{
-        nextEl:'#row1_mainBnr .swiper-button-next',
-        prevEl:'#row1_mainBnr .swiper-button-prev',
+        nextEl:'#row1_mainBnr .main .custom-next',
+        prevEl:'#row1_mainBnr .main .custom-prev',
     },
 })
 function update(swiper){
@@ -36,8 +36,8 @@ const newSwiper = new Swiper('.new',{
     slidesPerView:4,
     spaceBetween:16,
     navigation:{
-        nextEl:'#row2_new .swiper-button-next',
-        prevEl:'#row2_new .swiper-button-prev',
+        nextEl:'#row2_new .custom-next',
+        prevEl:'#row2_new .custom-prev',
     },
     breakpoints:{
         1400 :{slidesPerView:4,spaceBetween:16,},
@@ -82,8 +82,8 @@ const bestSwiper = new Swiper('.best',{
         320 :{slidesPerView:2,spaceBetween:10,},
     },
     navigation:{
-        nextEl:'#row4_best .swiper-button-next',
-        prevEl:'#row4_best .swiper-button-prev',
+        nextEl:'#row4_best .custom-next',
+        prevEl:'#row4_best .custom-prev',
     },
     loop: true,
     autoplay: {
@@ -97,8 +97,8 @@ const reviewSwiper = new Swiper('.review',{
     slidesPerView:7,
     spaceBetween:16,
     navigation:{
-        prevEl:'#row5_review .swiper-button-prev',
-        nextEl:'#row5_review .swiper-button-next',
+        prevEl:'#row5_review .custom-prev',
+        nextEl:'#row5_review .custom-next',
     },
     breakpoints:{
         1400 :{slidesPerView:7,spaceBetween:16,},
@@ -126,8 +126,8 @@ const celebSwiper = new Swiper('#row7_celeb .celeb',{
     slidesPerView:2,
     spaceBetween:200,
     navigation:{
-        prevEl:'#row7_celeb .swiper-button-prev',
-        nextEl:'#row7_celeb .swiper-button-next',
+        prevEl:'#row7_celeb .custom-prev',
+        nextEl:'#row7_celeb .custom-next',
     },
     pagination:{
         el: '#row7_celeb .swiper-pagination',

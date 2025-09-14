@@ -53,19 +53,19 @@ main #row1_mainBnr .custom-pagination * {/* pagination의 모든 글자적용 */
     font-weight:500; color:#444;}
 main #row1_mainBnr .custom-pagination .current {color:#000;}
 /* 모든 prev,next버튼 기본 디자인 초기화 */
-.swiper-button-prev::after {display:none;}
-.swiper-button-next::after {display:none;}
-main #row1_mainBnr .main .swiper-button-prev {
+.swiper-button-prev::after {display:none !important;}
+.swiper-button-next::after {display:none !important;}
+main #row1_mainBnr .main .custom-prev {
     background-image:url(../images/row1/prev.png);
-    background-size:contain;
-    left:30px;
-    width:80px; height:80px;
+    background-size:contain; position:absolute;
+    left:30px; top:50%; transform:translateY(-50%); z-index:600;
+    width:80px; height:80px; cursor:pointer;
 }
-main #row1_mainBnr .main .swiper-button-next {
+main #row1_mainBnr .main .custom-next {
     background-image:url(../images/row1/next.png);
-    background-size:contain;
-    right:30px;
-    width:80px; height:80px;
+    background-size:contain; position:absolute;
+    right:30px; top:50%; transform:translateY(-50%); z-index:600;
+    width:80px; height:80px; cursor:pointer;
 }
 /* 2행 : 신상품 */
 main #row2_new {
@@ -133,18 +133,19 @@ main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-
 main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .cart {
     position:absolute; bottom:0; right:0; cursor:pointer;
 }
-
-main #row2_new .container .tapContents .tapContent .swiper-button-prev {
+main #row2_new .container .tapContents .tapContent .custom-prev {
     background-image:url(../images/row2/prev.png);
     background-size:contain;
     width:50px; height:50px;
     left:86px;
+    top:50%; transform:translateY(-50%); cursor:pointer; position:absolute;
 }
-main #row2_new .container .tapContents .tapContent .swiper-button-next {
+main #row2_new .container .tapContents .tapContent .custom-next {
     background-image:url(../images/row2/next.png);
     background-size:contain;
     width:50px; height:50px;
     right:86px;
+    top:50%; transform:translateY(-50%); cursor:pointer; position:absolute;
 }
 /* 3행 : 브랜드 라인 */
 main #row3_styles {
@@ -313,17 +314,19 @@ main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swipe
 }
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .bottom .cart {}
 main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .bottom .cart img {}
-main #row4_best .container .tapContents .tapContent .swiper-button-prev {
+main #row4_best .container .tapContents .tapContent .custom-prev {
     background-image:url(../images/row4/prev.png);
     background-size:contain;
     width:50px; height:50px;
     left:86px;
+    top:50%; transform:translateY(-50%); cursor:pointer; position:absolute;
 }
-main #row4_best .container .tapContents .tapContent .swiper-button-next {
+main #row4_best .container .tapContents .tapContent .custom-next {
     background-image:url(../images/row4/next.png);
     background-size:contain;
     width:50px; height:50px;
     right:86px;
+    top:50%; transform:translateY(-50%); cursor:pointer; position:absolute;
 }
 /* 5행 : 리뷰 */
 main #row5_review {
@@ -358,17 +361,19 @@ main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .vertic
 main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg {display:inline-block;}
 main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .bottomImg img {width:100%; display:block;}
 /* db 생성태그 선택자 끝*/
-main #row5_review .container .wrap .swiper-button-prev {
+main #row5_review .container .wrap .custom-prev {
     background-image:url(../images/row5/prev.png);
     background-size:contain;
     width:50px; height:50px;
     left:86px;
+    top:50%; transform:translateY(-50%); cursor:pointer; position:absolute;
 }
-main #row5_review .container .wrap .swiper-button-next {
+main #row5_review .container .wrap .custom-next {
     background-image:url(../images/row5/next.png);
     background-size:contain;
     width:50px; height:50px;
     right:86px;
+    top:50%; transform:translateY(-50%); cursor:pointer; position:absolute;
 }
 main #row5_review .container .reviewBtn{
     background-color:#FF5C5C;
@@ -532,17 +537,17 @@ main #row7_celeb .container .celeb .swiper-wrapper .swiper-slide .product .price
 main #row7_celeb .container .swiper-pagination {
     display:none;
 }
-main #row7_celeb .container .swiper-button-prev {
+main #row7_celeb .container .custom-prev {
     background-image:url(../images/row7/prev.png);
     background-size:contain;
     width:70px; height:70px; left:100px;
-    transform:translateY(80%);
+    top:50%; transform:translateY(50%); cursor:pointer; position:absolute;
 }
-main #row7_celeb .container .swiper-button-next {
+main #row7_celeb .container .custom-next {
     background-image:url(../images/row7/next.png);
     background-size:contain;
     width:70px; height:70px; right:100px;
-    transform:translateY(80%);
+    top:50%; transform:translateY(50%); cursor:pointer; position:absolute;
 }
 /* 8행 : 인스타그램 */
 main #row8_insta {

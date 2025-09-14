@@ -15,8 +15,8 @@
         width:100%; height:580px;
     }
     main #row1_mainBnr .custom-pagination {bottom:25px;}
-    main #row1_mainBnr .main .swiper-button-prev,
-    main #row1_mainBnr .main .swiper-button-next {
+    main #row1_mainBnr .main .custom-prev,
+    main #row1_mainBnr .main .custom-next {
         width:50px; height:50px;
     }
     /* 2행 변경 디자인 */
@@ -36,8 +36,8 @@
     main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .name {
     font-size:0.813rem; margin-bottom:20px;
     }
-    main #row2_new .container .tapContents .tapContent .swiper-button-prev {left:42px;}
-    main #row2_new .container .tapContents .tapContent .swiper-button-next {right:42px;}
+    main #row2_new .container .tapContents .tapContent .custom-prev {left:42px;}
+    main #row2_new .container .tapContents .tapContent .custom-next {right:42px;}
     /* 3행 변경 디자인 */
     main #row3_styles {
         padding:100px 0;
@@ -75,14 +75,14 @@
     main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .name {
         font-size:0.813rem; margin-bottom:20px;
     }
-    main #row4_best .container .tapContents .tapContent .swiper-button-prev {left:42px;}
-    main #row4_best .container .tapContents .tapContent .swiper-button-next {right:42px;}
+    main #row4_best .container .tapContents .tapContent .custom-prev {left:42px;}
+    main #row4_best .container .tapContents .tapContent .custom-next {right:42px;}
     /* 5행 변경디자인 */
     main #row5_review .container .wrap .moreBtn {padding:0 90px;}
     main #row5_review .container .wrap .review {width:950px;}
     main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg {margin-bottom:10px;}
-    main #row5_review .container .wrap .swiper-button-prev {left:30px; transform:translateY(20%);}
-    main #row5_review .container .wrap .swiper-button-next {right:30px; transform:translateY(20%);}
+    main #row5_review .container .wrap .custom-prev {left:30px; transform:translateY(20%);}
+    main #row5_review .container .wrap .custom-next {right:30px; transform:translateY(20%);}
     /* 6행 변경디자인 */
     main #row6_lookbook .container .moreBtn {width:650px;}
     main #row6_lookbook .container .tapContents {width:650px; margin:0 auto;}
@@ -98,8 +98,8 @@
     main #row7_celeb .container .celeb {
         width:660px;
     }
-    main #row7_celeb .container .swiper-button-prev {left:80px;}
-    main #row7_celeb .container .swiper-button-next {right:80px;}
+    main #row7_celeb .container .custom-prev {left:80px;}
+    main #row7_celeb .container .custom-next {right:80px;}
     main #row8_insta .container .photoWrap {
         grid-template-columns:repeat(3, 1fr);
         width:932px;
@@ -202,8 +202,8 @@
     main #row2_new .container .tapContents .tapContent .new .swiper-wrapper .swiper-slide .name {
     font-size:0.813rem; margin-bottom:20px;
     }
-    main #row2_new .container .tapContents .tapContent .swiper-button-prev {display:none;}
-    main #row2_new .container .tapContents .tapContent .swiper-button-next {display:none;}
+    main #row2_new .container .tapContents .tapContent .custom-prev {display:none;}
+    main #row2_new .container .tapContents .tapContent .custom-next {display:none;}
     /* 3행 변경 디자인 */
     main #row3_styles {
         padding:50px 0;
@@ -264,19 +264,19 @@
     main #row4_best .container .tapContents .tapContent .best .swiper-wrapper .swiper-slide .name {
     font-size:0.813rem; margin-bottom:20px;
     }
-    main #row4_best .container .tapContents .tapContent .swiper-button-prev {display:none;}
-    main #row4_best .container .tapContents .tapContent .swiper-button-next {display:none;}
+    main #row4_best .container .tapContents .tapContent .custom-prev {display:none;}
+    main #row4_best .container .tapContents .tapContent .custom-next {display:none;}
     /* 5행 변경디자인 */
     main #row5_review .container h1 {font-size:1.375rem;}
     main #row5_review .container .wrap .moreBtn {padding:0 20px;}
     main #row5_review .container .wrap .review {width:450px;}
     main #row5_review .container .wrap .review .swiper-wrapper .swiper-slide .verticalWrap .topImg {margin-bottom:8px;}
-    main #row5_review .container .wrap .swiper-button-prev {
+    main #row5_review .container .wrap .custom-prev {
         width:30px; height:30px; left:30px;
-        transform:translateY(80%);}
-    main #row5_review .container .wrap .swiper-button-next {
+        transform:translateY(20%);}
+    main #row5_review .container .wrap .custom-next {
         width:30px; height:30px; right:30px;
-        transform:translateY(80%);}
+        transform:translateY(20%);}
     /* 6행 변경디자인 */
     main #row6_lookbook .container h1 {
         font-size:1.375rem; margin-bottom:40px;
@@ -341,8 +341,8 @@
     main #row7_celeb .container .swiper-pagination {
         display:block; position:absolute; bottom:-36px;
     }
-    main #row7_celeb .container .swiper-button-prev {display:none;}
-    main #row7_celeb .container .swiper-button-next {display:none;}
+    main #row7_celeb .container .custom-prev {display:none;}
+    main #row7_celeb .container .custom-next {display:none;}
     /* 8행 변경디자인 */
     main #row8_insta .container h1 {
         font-size:1.375rem; line-height:1.5;
